@@ -91,11 +91,11 @@ The final model passes two of four held-out criteria. It learns useful action-al
 
 ## Demo
 
-![Held-out state D: original, reversed, and all-NOOP controls](demo/heldout_state_D_seed_43.gif)
+![Held-out state D: ORIGINAL, REVERSED, and ALL-NOOP controls](demo/heldout_state_D_seed_42.gif)
 
-[Download the synchronized MP4](demo/heldout_state_D_seed_43.mp4) · [Composition manifest](demo/showcase.json)
+[Download the synchronized MP4](demo/heldout_state_D_seed_42.mp4) · [Composition manifest](demo/showcase.json)
 
-This test-state example uses seed 43. The three panels share the same observed \(O_0\), prompt, initial noise, model, and inference settings; only action IDs differ. Both its first and final turn-flip checks pass. The demo composes existing M6F-2 videos and does not run or alter the model outputs.
+This test-state example uses seed 42. The three panels share the same observed \(O_0\), prompt, initial noise, model, and inference settings; only action IDs differ. Both its first and final turn-flip checks pass. The demo composes existing M6F-2 videos and does not run or alter the model outputs.
 
 ## Ablations / Key Findings
 

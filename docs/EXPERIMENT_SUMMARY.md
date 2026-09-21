@@ -51,6 +51,6 @@ The contrastive objective strengthened aggregate direction and correlation contr
 - Final metrics: [`eval/metrics.json`](../data/experiments/m6f2_action_contrastive_128_6400/eval/metrics.json)
 - Final report: [`eval/report.md`](../data/experiments/m6f2_action_contrastive_128_6400/eval/report.md)
 - Lag audit: [`m6g0b report`](../data/experiments/m6g0b_first_turn_temporal_lag/report.md)
-- Demo: [`heldout_state_D_seed_43.mp4`](../demo/heldout_state_D_seed_43.mp4)
+- Demo: [`heldout_state_D_seed_42.mp4`](../demo/heldout_state_D_seed_42.mp4)
 
 Earlier scripts under `training/wan/` are retained as historical experiment and debug entry points. They are not the recommended final workflow.

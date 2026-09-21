@@ -1,7 +1,10 @@
 {
   "source_milestone": "M6F-2",
+  "model": "M6F-2 step-6400 action-token cross-attention adapter",
+  "official_checkpoint_step": 6400,
+  "adapter_checkpoint_sha256": "c6cb30a2e301556736faa4803d757592496b4821f5b5599b012c00069aa21093",
   "state": "D",
-  "seed": 43,
+  "seed": 42,
   "sample_id": "my_way_home_episode_0007_clip_000006",
   "episode_id": "episode_0007",
   "split": "test",
@@ -10,23 +13,34 @@
   "source_videos": [
     {
       "condition": "original",
-      "path": "data/experiments/m6f2_action_contrastive_128_6400/eval/videos/state_D_original_seed_43.mp4",
-      "sha256": "22b60b104ecd8e8a812e7f5620d31be279feded0b0770e51e5934025e7d075c8"
+      "path": "data/experiments/m6f2_action_contrastive_128_6400/eval/videos/state_D_original_seed_42.mp4",
+      "sha256": "be19eaab2dc87e80c605e19582474088f9ef35579c14980d5265c1ef73ef54bb"
     },
     {
       "condition": "reversed",
-      "path": "data/experiments/m6f2_action_contrastive_128_6400/eval/videos/state_D_reversed_seed_43.mp4",
-      "sha256": "cdbd39a653c2ceb5b623c2e0c70e4fe6e3b280d82e9389456dd5a5db0cfeb430"
+      "path": "data/experiments/m6f2_action_contrastive_128_6400/eval/videos/state_D_reversed_seed_42.mp4",
+      "sha256": "3421607cde546becf66d37e06f8ef8b3d0479751a514f9f688d3583c25e53f06"
     },
     {
       "condition": "all_noop",
-      "path": "data/experiments/m6f2_action_contrastive_128_6400/eval/videos/state_D_all_noop_seed_43.mp4",
-      "sha256": "ab286e3d4e5dfb749c78da8282a023244274162e406f48c8bca7aa35e10a5add"
+      "path": "data/experiments/m6f2_action_contrastive_128_6400/eval/videos/state_D_all_noop_seed_42.mp4",
+      "sha256": "de4ed91af104c1a94a41bdaaa87c560d581e11fc76585a0511c8ae38a227858a"
     }
   ],
   "composition": "Native-size decoded frames pasted without crop, image filtering, frame replacement, or retiming; labels and timelines outside video panels. MP4 is presentation re-encoding; GIF is a scaled preview.",
   "source_frames_per_video": 17,
   "source_fps": 8.0,
-  "mp4_sha256": "d84bc94ee189989bb62a43e823b77925f39b4888dca67228af2de2433d8f0e80",
-  "gif_sha256": "30e09fa80a5cf4fa564bd103941a44f855f04b96ee9367f519b15ee870583478"
+  "subtitle": "Same O0 \u00b7 same seed/noise \u00b7 only action sequence changed",
+  "display_labels": [
+    "ORIGINAL",
+    "REVERSED",
+    "ALL-NOOP"
+  ],
+  "action_timelines": {
+    "ORIGINAL": "A0\u20131: forward + LEFT | A2\u20139: NOOP | A10\u201315: forward + RIGHT",
+    "REVERSED": "A0\u20131: forward + RIGHT | A2\u20139: NOOP | A10\u201315: forward + LEFT",
+    "ALL-NOOP": "A0\u201315: NOOP"
+  },
+  "mp4_sha256": "37b54ec0f920da8ce8c8f5cedc9e66f504c0cca037c6e23cdcfc8a1afe8a74e5",
+  "gif_sha256": "1c0d585ddaffad486f9c296a94c6c22a8ad895121203b3dc419192e0843439a2"
 }
