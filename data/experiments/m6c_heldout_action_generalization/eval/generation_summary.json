@@ -1,0 +1,2744 @@
+{
+  "video_count": 36,
+  "videos": [
+    {
+      "state": "A",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0040_clip_000026",
+      "episode_id": "episode_0040",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0040/rgb/000208.png",
+      "source_o0_sha256": "2cdb5dbfbaa62c0e76324869b43ff2e5bd2e21a241d0926fafbe0fa314ed5b5a",
+      "condition": "original",
+      "action_ids": [
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "seed": 42,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_A_original_seed_42.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 22.948,
+      "peak_gpu_allocated_mib": 13157.55,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 95.74293518066406
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "A",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0040_clip_000026",
+      "episode_id": "episode_0040",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0040/rgb/000208.png",
+      "source_o0_sha256": "2cdb5dbfbaa62c0e76324869b43ff2e5bd2e21a241d0926fafbe0fa314ed5b5a",
+      "condition": "reversed",
+      "action_ids": [
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "seed": 42,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_A_reversed_seed_42.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 20.98,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 95.74293518066406
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "A",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0040_clip_000026",
+      "episode_id": "episode_0040",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0040/rgb/000208.png",
+      "source_o0_sha256": "2cdb5dbfbaa62c0e76324869b43ff2e5bd2e21a241d0926fafbe0fa314ed5b5a",
+      "condition": "all_noop",
+      "action_ids": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "seed": 42,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_A_all_noop_seed_42.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.616,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 95.74293518066406
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "A",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0040_clip_000026",
+      "episode_id": "episode_0040",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0040/rgb/000208.png",
+      "source_o0_sha256": "2cdb5dbfbaa62c0e76324869b43ff2e5bd2e21a241d0926fafbe0fa314ed5b5a",
+      "condition": "original",
+      "action_ids": [
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "seed": 43,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_A_original_seed_43.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.033,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 95.74293518066406
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "A",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0040_clip_000026",
+      "episode_id": "episode_0040",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0040/rgb/000208.png",
+      "source_o0_sha256": "2cdb5dbfbaa62c0e76324869b43ff2e5bd2e21a241d0926fafbe0fa314ed5b5a",
+      "condition": "reversed",
+      "action_ids": [
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "seed": 43,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_A_reversed_seed_43.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.2,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 95.74293518066406
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "A",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0040_clip_000026",
+      "episode_id": "episode_0040",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0040/rgb/000208.png",
+      "source_o0_sha256": "2cdb5dbfbaa62c0e76324869b43ff2e5bd2e21a241d0926fafbe0fa314ed5b5a",
+      "condition": "all_noop",
+      "action_ids": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "seed": 43,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_A_all_noop_seed_43.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.091,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 95.74293518066406
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "A",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0040_clip_000026",
+      "episode_id": "episode_0040",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0040/rgb/000208.png",
+      "source_o0_sha256": "2cdb5dbfbaa62c0e76324869b43ff2e5bd2e21a241d0926fafbe0fa314ed5b5a",
+      "condition": "original",
+      "action_ids": [
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "seed": 44,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_A_original_seed_44.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.161,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 95.74293518066406
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "A",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0040_clip_000026",
+      "episode_id": "episode_0040",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0040/rgb/000208.png",
+      "source_o0_sha256": "2cdb5dbfbaa62c0e76324869b43ff2e5bd2e21a241d0926fafbe0fa314ed5b5a",
+      "condition": "reversed",
+      "action_ids": [
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "seed": 44,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_A_reversed_seed_44.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.439,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 95.74293518066406
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "A",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0040_clip_000026",
+      "episode_id": "episode_0040",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0040/rgb/000208.png",
+      "source_o0_sha256": "2cdb5dbfbaa62c0e76324869b43ff2e5bd2e21a241d0926fafbe0fa314ed5b5a",
+      "condition": "all_noop",
+      "action_ids": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "seed": 44,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_A_all_noop_seed_44.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.78,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 95.74293518066406
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "B",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0017_clip_000031",
+      "episode_id": "episode_0017",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0017/rgb/000248.png",
+      "source_o0_sha256": "cba0bd220fa47fb93f9b8711b757c0060a5d58673044dcd9bc9b68790f5df400",
+      "condition": "original",
+      "action_ids": [
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "seed": 42,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_B_original_seed_42.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.406,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 111.68131256103516
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "B",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0017_clip_000031",
+      "episode_id": "episode_0017",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0017/rgb/000248.png",
+      "source_o0_sha256": "cba0bd220fa47fb93f9b8711b757c0060a5d58673044dcd9bc9b68790f5df400",
+      "condition": "reversed",
+      "action_ids": [
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "seed": 42,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_B_reversed_seed_42.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.771,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 111.68131256103516
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "B",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0017_clip_000031",
+      "episode_id": "episode_0017",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0017/rgb/000248.png",
+      "source_o0_sha256": "cba0bd220fa47fb93f9b8711b757c0060a5d58673044dcd9bc9b68790f5df400",
+      "condition": "all_noop",
+      "action_ids": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "seed": 42,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_B_all_noop_seed_42.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.45,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 111.68131256103516
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "B",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0017_clip_000031",
+      "episode_id": "episode_0017",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0017/rgb/000248.png",
+      "source_o0_sha256": "cba0bd220fa47fb93f9b8711b757c0060a5d58673044dcd9bc9b68790f5df400",
+      "condition": "original",
+      "action_ids": [
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "seed": 43,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_B_original_seed_43.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.878,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 111.68131256103516
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "B",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0017_clip_000031",
+      "episode_id": "episode_0017",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0017/rgb/000248.png",
+      "source_o0_sha256": "cba0bd220fa47fb93f9b8711b757c0060a5d58673044dcd9bc9b68790f5df400",
+      "condition": "reversed",
+      "action_ids": [
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "seed": 43,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_B_reversed_seed_43.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.583,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 111.68131256103516
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "B",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0017_clip_000031",
+      "episode_id": "episode_0017",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0017/rgb/000248.png",
+      "source_o0_sha256": "cba0bd220fa47fb93f9b8711b757c0060a5d58673044dcd9bc9b68790f5df400",
+      "condition": "all_noop",
+      "action_ids": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "seed": 43,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_B_all_noop_seed_43.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.881,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 111.68131256103516
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "B",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0017_clip_000031",
+      "episode_id": "episode_0017",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0017/rgb/000248.png",
+      "source_o0_sha256": "cba0bd220fa47fb93f9b8711b757c0060a5d58673044dcd9bc9b68790f5df400",
+      "condition": "original",
+      "action_ids": [
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "seed": 44,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_B_original_seed_44.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.359,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 111.68131256103516
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "B",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0017_clip_000031",
+      "episode_id": "episode_0017",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0017/rgb/000248.png",
+      "source_o0_sha256": "cba0bd220fa47fb93f9b8711b757c0060a5d58673044dcd9bc9b68790f5df400",
+      "condition": "reversed",
+      "action_ids": [
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "seed": 44,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_B_reversed_seed_44.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.921,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 111.68131256103516
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "B",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0017_clip_000031",
+      "episode_id": "episode_0017",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0017/rgb/000248.png",
+      "source_o0_sha256": "cba0bd220fa47fb93f9b8711b757c0060a5d58673044dcd9bc9b68790f5df400",
+      "condition": "all_noop",
+      "action_ids": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "seed": 44,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_B_all_noop_seed_44.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.438,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 111.68131256103516
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "C",
+      "split": "val",
+      "sample_id": "my_way_home_episode_0014_clip_000017",
+      "episode_id": "episode_0014",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0014/rgb/000136.png",
+      "source_o0_sha256": "01a416ba461d9936488385f468d81040f6b05f8b024c730ccc5e16373c92f545",
+      "condition": "original",
+      "action_ids": [
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "seed": 42,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_C_original_seed_42.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 20.182,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 121.16400146484375
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "C",
+      "split": "val",
+      "sample_id": "my_way_home_episode_0014_clip_000017",
+      "episode_id": "episode_0014",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0014/rgb/000136.png",
+      "source_o0_sha256": "01a416ba461d9936488385f468d81040f6b05f8b024c730ccc5e16373c92f545",
+      "condition": "reversed",
+      "action_ids": [
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "seed": 42,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_C_reversed_seed_42.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.458,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 121.16400146484375
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "C",
+      "split": "val",
+      "sample_id": "my_way_home_episode_0014_clip_000017",
+      "episode_id": "episode_0014",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0014/rgb/000136.png",
+      "source_o0_sha256": "01a416ba461d9936488385f468d81040f6b05f8b024c730ccc5e16373c92f545",
+      "condition": "all_noop",
+      "action_ids": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "seed": 42,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_C_all_noop_seed_42.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.772,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 121.16400146484375
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "C",
+      "split": "val",
+      "sample_id": "my_way_home_episode_0014_clip_000017",
+      "episode_id": "episode_0014",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0014/rgb/000136.png",
+      "source_o0_sha256": "01a416ba461d9936488385f468d81040f6b05f8b024c730ccc5e16373c92f545",
+      "condition": "original",
+      "action_ids": [
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "seed": 43,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_C_original_seed_43.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.376,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 121.16400146484375
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "C",
+      "split": "val",
+      "sample_id": "my_way_home_episode_0014_clip_000017",
+      "episode_id": "episode_0014",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0014/rgb/000136.png",
+      "source_o0_sha256": "01a416ba461d9936488385f468d81040f6b05f8b024c730ccc5e16373c92f545",
+      "condition": "reversed",
+      "action_ids": [
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "seed": 43,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_C_reversed_seed_43.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 20.076,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 121.16400146484375
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "C",
+      "split": "val",
+      "sample_id": "my_way_home_episode_0014_clip_000017",
+      "episode_id": "episode_0014",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0014/rgb/000136.png",
+      "source_o0_sha256": "01a416ba461d9936488385f468d81040f6b05f8b024c730ccc5e16373c92f545",
+      "condition": "all_noop",
+      "action_ids": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "seed": 43,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_C_all_noop_seed_43.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.506,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 121.16400146484375
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "C",
+      "split": "val",
+      "sample_id": "my_way_home_episode_0014_clip_000017",
+      "episode_id": "episode_0014",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0014/rgb/000136.png",
+      "source_o0_sha256": "01a416ba461d9936488385f468d81040f6b05f8b024c730ccc5e16373c92f545",
+      "condition": "original",
+      "action_ids": [
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "seed": 44,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_C_original_seed_44.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 20.556,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 121.16400146484375
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "C",
+      "split": "val",
+      "sample_id": "my_way_home_episode_0014_clip_000017",
+      "episode_id": "episode_0014",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0014/rgb/000136.png",
+      "source_o0_sha256": "01a416ba461d9936488385f468d81040f6b05f8b024c730ccc5e16373c92f545",
+      "condition": "reversed",
+      "action_ids": [
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "seed": 44,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_C_reversed_seed_44.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.377,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 121.16400146484375
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "C",
+      "split": "val",
+      "sample_id": "my_way_home_episode_0014_clip_000017",
+      "episode_id": "episode_0014",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0014/rgb/000136.png",
+      "source_o0_sha256": "01a416ba461d9936488385f468d81040f6b05f8b024c730ccc5e16373c92f545",
+      "condition": "all_noop",
+      "action_ids": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "seed": 44,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_C_all_noop_seed_44.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.93,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 121.16400146484375
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "D",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0007_clip_000006",
+      "episode_id": "episode_0007",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0007/rgb/000048.png",
+      "source_o0_sha256": "46d434ff9174ca99f11e4ec490f9696d493c9de86580d007f8f1dbf5fe43b5ca",
+      "condition": "original",
+      "action_ids": [
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "seed": 42,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_D_original_seed_42.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.254,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 85.20484161376953
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "D",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0007_clip_000006",
+      "episode_id": "episode_0007",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0007/rgb/000048.png",
+      "source_o0_sha256": "46d434ff9174ca99f11e4ec490f9696d493c9de86580d007f8f1dbf5fe43b5ca",
+      "condition": "reversed",
+      "action_ids": [
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "seed": 42,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_D_reversed_seed_42.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.547,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 85.20484161376953
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "D",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0007_clip_000006",
+      "episode_id": "episode_0007",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0007/rgb/000048.png",
+      "source_o0_sha256": "46d434ff9174ca99f11e4ec490f9696d493c9de86580d007f8f1dbf5fe43b5ca",
+      "condition": "all_noop",
+      "action_ids": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "seed": 42,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_D_all_noop_seed_42.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.319,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 85.20484161376953
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "D",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0007_clip_000006",
+      "episode_id": "episode_0007",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0007/rgb/000048.png",
+      "source_o0_sha256": "46d434ff9174ca99f11e4ec490f9696d493c9de86580d007f8f1dbf5fe43b5ca",
+      "condition": "original",
+      "action_ids": [
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "seed": 43,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_D_original_seed_43.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.605,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 85.20484161376953
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "D",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0007_clip_000006",
+      "episode_id": "episode_0007",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0007/rgb/000048.png",
+      "source_o0_sha256": "46d434ff9174ca99f11e4ec490f9696d493c9de86580d007f8f1dbf5fe43b5ca",
+      "condition": "reversed",
+      "action_ids": [
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "seed": 43,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_D_reversed_seed_43.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.159,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 85.20484161376953
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "D",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0007_clip_000006",
+      "episode_id": "episode_0007",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0007/rgb/000048.png",
+      "source_o0_sha256": "46d434ff9174ca99f11e4ec490f9696d493c9de86580d007f8f1dbf5fe43b5ca",
+      "condition": "all_noop",
+      "action_ids": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "seed": 43,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_D_all_noop_seed_43.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.588,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 85.20484161376953
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "D",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0007_clip_000006",
+      "episode_id": "episode_0007",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0007/rgb/000048.png",
+      "source_o0_sha256": "46d434ff9174ca99f11e4ec490f9696d493c9de86580d007f8f1dbf5fe43b5ca",
+      "condition": "original",
+      "action_ids": [
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "seed": 44,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_D_original_seed_44.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.161,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 85.20484161376953
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "D",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0007_clip_000006",
+      "episode_id": "episode_0007",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0007/rgb/000048.png",
+      "source_o0_sha256": "46d434ff9174ca99f11e4ec490f9696d493c9de86580d007f8f1dbf5fe43b5ca",
+      "condition": "reversed",
+      "action_ids": [
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "seed": 44,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_D_reversed_seed_44.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.585,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 85.20484161376953
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    },
+    {
+      "state": "D",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0007_clip_000006",
+      "episode_id": "episode_0007",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0007/rgb/000048.png",
+      "source_o0_sha256": "46d434ff9174ca99f11e4ec490f9696d493c9de86580d007f8f1dbf5fe43b5ca",
+      "condition": "all_noop",
+      "action_ids": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "seed": 44,
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "checkpoint_sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19",
+      "resolution": [
+        448,
+        256
+      ],
+      "num_frames": 17,
+      "inference_steps": 30,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/videos/state_D_all_noop_seed_44.mp4",
+      "action_hook_calls": {
+        "3": 60,
+        "11": 60,
+        "19": 60,
+        "27": 60
+      },
+      "runtime_seconds": 19.334,
+      "peak_gpu_allocated_mib": 13158.07,
+      "post_generation_first_frame_replacement": false,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 85.20484161376953
+      },
+      "mask_preprocessing": {
+        "preprocessed_video_shape": [
+          1,
+          3,
+          17,
+          256,
+          448
+        ],
+        "preprocessed_mask_shape": [
+          1,
+          1,
+          17,
+          256,
+          448
+        ],
+        "frame0_mask_min_max": [
+          0.0,
+          0.0
+        ],
+        "future_mask_min_max": [
+          1.0,
+          1.0
+        ],
+        "preprocessed_o0_exactly_matches_supplied_image": true
+      },
+      "frame_count_verified": 17
+    }
+  ],
+  "protocol": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6c_heldout_action_generalization/eval/protocol.json",
+  "runtime_seconds": 724.363,
+  "peak_gpu_vram_mib_observed": 14046
+}

@@ -1,0 +1,206 @@
+{
+  "milestone": "M6F-1",
+  "status": "complete; inference-only loss audit",
+  "subset_manifest": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6d_128clip_action_scaleup/subset_manifest.json",
+  "subset_manifest_sha256": "dcfe01939b548661013082d6866e7cfa5738c8176fd4ed6d00dfa2a90727423b",
+  "checkpoint": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6d_128clip_action_scaleup/checkpoints/step_6400/adapter.pt",
+  "checkpoint_sha256": "5c1e329f72e3f29063fa5c78a1ccd0fdca9fb8a5c83c437d94a08b508255b7c0",
+  "eligible_clips": 124,
+  "unchanged_clips": 4,
+  "paired_forward_count": 372,
+  "denoiser_forward_count": 744,
+  "regions": {
+    "early": {
+      "timestep_index": 100,
+      "timestep": 964,
+      "sigma": 0.9643239974975586
+    },
+    "middle": {
+      "timestep_index": 500,
+      "timestep": 750,
+      "sigma": 0.7503747940063477
+    },
+    "late": {
+      "timestep_index": 900,
+      "timestep": 251,
+      "sigma": 0.251872181892395
+    }
+  },
+  "noise_seed_rule": "44 + 3 * zero_based_subset_index + region_index(early=0,middle=1,late=2)",
+  "same_o0_target_timestep_noise_text_and_model_within_each_pair": true,
+  "only_action_ids_differ_within_each_pair": true,
+  "future_only_loss_latent_positions": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "native_vace_o0_and_mask_behavior_unchanged": true,
+  "pretrained_vace_and_adapter_frozen_unchanged": true,
+  "vae_and_text_encoder_not_loaded": true,
+  "optimizer_steps": 0,
+  "global": {
+    "pairs": 372,
+    "fraction_delta_positive": 0.9086021505376344,
+    "mean_delta": 0.021509716542617928,
+    "median_delta": 0.01023753359913826,
+    "std_delta_population": 0.0380027832927932,
+    "p10_delta": 0.00010696649551391606,
+    "p25_delta": 0.003095243126153946,
+    "p50_delta": 0.01023753359913826,
+    "p75_delta": 0.02478243224322796,
+    "p90_delta": 0.05304925739765169,
+    "mean_correct_loss": 0.1392402244601599,
+    "mean_wrong_loss": 0.16074994100277784
+  },
+  "by_region": {
+    "early": {
+      "pairs": 124,
+      "fraction_delta_positive": 0.8548387096774194,
+      "mean_delta": 0.04007561006132634,
+      "median_delta": 0.024023570120334625,
+      "std_delta_population": 0.05829434990602237,
+      "p10_delta": -0.00234188437461853,
+      "p25_delta": 0.007978934794664383,
+      "p50_delta": 0.024023570120334625,
+      "p75_delta": 0.052232321351766586,
+      "p90_delta": 0.09133651852607728,
+      "mean_correct_loss": 0.16652905844872998,
+      "mean_wrong_loss": 0.20660466851005632
+    },
+    "middle": {
+      "pairs": 124,
+      "fraction_delta_positive": 0.967741935483871,
+      "mean_delta": 0.01855500894148023,
+      "median_delta": 0.01448683999478817,
+      "std_delta_population": 0.016878641200227407,
+      "p10_delta": 0.002050549536943436,
+      "p25_delta": 0.005383427254855633,
+      "p50_delta": 0.01448683999478817,
+      "p75_delta": 0.02478243224322796,
+      "p90_delta": 0.04290390312671662,
+      "mean_correct_loss": 0.08392148977145553,
+      "mean_wrong_loss": 0.10247649871293575
+    },
+    "late": {
+      "pairs": 124,
+      "fraction_delta_positive": 0.9032258064516129,
+      "mean_delta": 0.005898530625047222,
+      "median_delta": 0.004176914691925049,
+      "std_delta_population": 0.007237612130808299,
+      "p10_delta": 6.234496831893924e-05,
+      "p25_delta": 0.001362428069114685,
+      "p50_delta": 0.004176914691925049,
+      "p75_delta": 0.007646460086107254,
+      "p90_delta": 0.014765247702598575,
+      "mean_correct_loss": 0.1672701251602942,
+      "mean_wrong_loss": 0.1731686557853414
+    }
+  },
+  "excluded_clips": [
+    {
+      "sample_index": 38,
+      "sample_id": "my_way_home_episode_0025_clip_000044",
+      "reason": "left/right swap leaves all 16 action IDs unchanged"
+    },
+    {
+      "sample_index": 86,
+      "sample_id": "my_way_home_episode_0027_clip_000037",
+      "reason": "left/right swap leaves all 16 action IDs unchanged"
+    },
+    {
+      "sample_index": 103,
+      "sample_id": "my_way_home_episode_0041_clip_000018",
+      "reason": "left/right swap leaves all 16 action IDs unchanged"
+    },
+    {
+      "sample_index": 106,
+      "sample_id": "my_way_home_episode_0032_clip_000046",
+      "reason": "left/right swap leaves all 16 action IDs unchanged"
+    }
+  ],
+  "runtime_seconds": 111.143,
+  "peak_gpu_allocated_mib": 4365.5,
+  "peak_gpu_reserved_mib": 4766.0,
+  "stratification": {
+    "unit": "per-clip mean of three paired deltas",
+    "swapped_action_count": [
+      {
+        "bin": "1-4",
+        "clips": 8,
+        "mean_clip_delta": 0.0026115537621080875,
+        "median_clip_delta": 0.002987038344144821,
+        "fraction_clips_mean_delta_positive": 0.875
+      },
+      {
+        "bin": "5-8",
+        "clips": 37,
+        "mean_clip_delta": 0.017805963033088693,
+        "median_clip_delta": 0.011723811427752176,
+        "fraction_clips_mean_delta_positive": 0.918918918918919
+      },
+      {
+        "bin": "9-12",
+        "clips": 29,
+        "mean_clip_delta": 0.019423744287984126,
+        "median_clip_delta": 0.01780116558074951,
+        "fraction_clips_mean_delta_positive": 0.8275862068965517
+      },
+      {
+        "bin": "13-16",
+        "clips": 50,
+        "mean_clip_delta": 0.028484064092238744,
+        "median_clip_delta": 0.025794056554635368,
+        "fraction_clips_mean_delta_positive": 0.98
+      }
+    ],
+    "noop_fraction": [
+      {
+        "bin": "0-25%",
+        "clips": 90,
+        "mean_clip_delta": 0.022552123707201745,
+        "median_clip_delta": 0.01998897331456343,
+        "fraction_clips_mean_delta_positive": 0.9222222222222223
+      },
+      {
+        "bin": ">25-50%",
+        "clips": 19,
+        "mean_clip_delta": 0.01810245931540665,
+        "median_clip_delta": 0.009057459731896719,
+        "fraction_clips_mean_delta_positive": 0.8421052631578947
+      },
+      {
+        "bin": ">50-75%",
+        "clips": 14,
+        "mean_clip_delta": 0.020737673333358197,
+        "median_clip_delta": 0.011513187239567438,
+        "fraction_clips_mean_delta_positive": 1.0
+      },
+      {
+        "bin": ">75-100%",
+        "clips": 1,
+        "mean_clip_delta": 0.0032395639767249427,
+        "median_clip_delta": 0.0032395639767249427,
+        "fraction_clips_mean_delta_positive": 1.0
+      }
+    ]
+  },
+  "recommendation": {
+    "source": "M6F-1 TRAIN-only gap distribution; no held-out selection",
+    "margin": 0.01,
+    "lambda": 0.25,
+    "expected_hinge_active_fraction_on_audited_pairs": {
+      "all": 0.4946236559139785,
+      "early": 0.28225806451612906,
+      "middle": 0.4032258064516129,
+      "late": 0.7983870967741935
+    },
+    "mean_ranking_loss_at_recommended_margin": 0.0036354348998797197,
+    "mean_weighted_ranking_loss": 0.0009088587249699299,
+    "provisional_0_05_margin_active_fraction": 0.8870967741935484,
+    "qualification": "Fixed conservative starting values for a later experiment, not validated training hyperparameters; loss-scale estimate does not bound gradient influence."
+  },
+  "raw_json_path": "data/experiments/m6f1_action_contrastive_gap_audit/raw_results.json",
+  "raw_csv_path": "data/experiments/m6f1_action_contrastive_gap_audit/raw_results.csv",
+  "independent_raw_validation": "372 unique clip/region pairs; each action sequence verified against source manifest and prescribed swap; noise seeds, region indices, deltas, finite losses, and CSV row count verified"
+}

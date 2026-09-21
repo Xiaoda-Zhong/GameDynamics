@@ -1,0 +1,37 @@
+{
+  "experiment": "M6A-3 four-state current-state conditioning",
+  "selected_states": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/selected_states.json",
+  "sample_ids": [
+    "my_way_home_episode_0028_clip_000011",
+    "my_way_home_episode_0005_clip_000053",
+    "my_way_home_episode_0010_clip_000058",
+    "my_way_home_episode_0038_clip_000028"
+  ],
+  "generic_prompt": "A first-person gameplay view in a retro 3D stone maze.",
+  "source_manifest_sha256": "7d56952b72cc7c1075319ee1aa038c04b6b250913826f111f3bf63c9c8def991",
+  "model": "/root/autodl-tmp/models/Wan2.1-T2V-1.3B-Diffusers",
+  "finetrainers_commit": "7c238443b7f102d3cfb4425caabd629e2ee1c02b",
+  "rank": 128,
+  "alpha": 128,
+  "learning_rate": 2e-05,
+  "frames": 17,
+  "width": 448,
+  "height": 256,
+  "dtype": "bf16",
+  "batch_size": 1,
+  "gradient_accumulation_steps": 1,
+  "seed": 42,
+  "optimizer_steps": 1600,
+  "checkpoints": [
+    200,
+    400,
+    800,
+    1600
+  ],
+  "expected_presentations_per_state": 400,
+  "pass_thresholds": {
+    "state_identification_correct_min": 10,
+    "own_state_mean_ssim_min": 0.6,
+    "median_separation_margin_min": 0.05
+  }
+}

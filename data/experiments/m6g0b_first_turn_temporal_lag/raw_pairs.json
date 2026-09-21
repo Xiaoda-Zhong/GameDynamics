@@ -1,0 +1,494 @@
+[
+  {
+    "state": "A",
+    "seed": 42,
+    "transitions": [
+      {
+        "transition": "O1->O2",
+        "transition_index": 1,
+        "original_signed_horizontal_flow": -2.7600973991378845,
+        "reversed_signed_horizontal_flow": -0.4842644150348794,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O2->O3",
+        "transition_index": 2,
+        "original_signed_horizontal_flow": -3.5749207511898,
+        "reversed_signed_horizontal_flow": 0.7878393835658878,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O3->O4",
+        "transition_index": 3,
+        "original_signed_horizontal_flow": 4.646378541038952,
+        "reversed_signed_horizontal_flow": 1.4258264525164095,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O4->O5",
+        "transition_index": 4,
+        "original_signed_horizontal_flow": -0.09572952896186396,
+        "reversed_signed_horizontal_flow": 1.2493951395155498,
+        "expected_left_right_reversal": false
+      }
+    ],
+    "earliest_expected_reversal": null,
+    "lag_category": "no reversal",
+    "official_first_turn_flip": false,
+    "official_overall_flip": false,
+    "diagnostic_o1_to_o5_mean_original_signed_flow": -0.44609228456264916,
+    "diagnostic_o1_to_o5_mean_reversed_signed_flow": 0.7446991401407419,
+    "diagnostic_o1_to_o5_expected_reversal": false
+  },
+  {
+    "state": "A",
+    "seed": 43,
+    "transitions": [
+      {
+        "transition": "O1->O2",
+        "transition_index": 1,
+        "original_signed_horizontal_flow": 6.917598923607996,
+        "reversed_signed_horizontal_flow": -1.0115732889598386,
+        "expected_left_right_reversal": true
+      },
+      {
+        "transition": "O2->O3",
+        "transition_index": 2,
+        "original_signed_horizontal_flow": -0.7786815263704889,
+        "reversed_signed_horizontal_flow": 1.1276130283882768,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O3->O4",
+        "transition_index": 3,
+        "original_signed_horizontal_flow": 1.66806004805525,
+        "reversed_signed_horizontal_flow": 0.5845281102569584,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O4->O5",
+        "transition_index": 4,
+        "original_signed_horizontal_flow": -3.938355352392172,
+        "reversed_signed_horizontal_flow": 0.6966281942263544,
+        "expected_left_right_reversal": false
+      }
+    ],
+    "earliest_expected_reversal": "O1->O2",
+    "lag_category": "immediate",
+    "official_first_turn_flip": true,
+    "official_overall_flip": true,
+    "diagnostic_o1_to_o5_mean_original_signed_flow": 0.9671555232251463,
+    "diagnostic_o1_to_o5_mean_reversed_signed_flow": 0.34929901097793775,
+    "diagnostic_o1_to_o5_expected_reversal": false
+  },
+  {
+    "state": "A",
+    "seed": 44,
+    "transitions": [
+      {
+        "transition": "O1->O2",
+        "transition_index": 1,
+        "original_signed_horizontal_flow": 9.02396778949662,
+        "reversed_signed_horizontal_flow": 3.133224860237818,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O2->O3",
+        "transition_index": 2,
+        "original_signed_horizontal_flow": 6.050303896883081,
+        "reversed_signed_horizontal_flow": 2.8600030791359474,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O3->O4",
+        "transition_index": 3,
+        "original_signed_horizontal_flow": 6.672430303611652,
+        "reversed_signed_horizontal_flow": 2.745851125770187,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O4->O5",
+        "transition_index": 4,
+        "original_signed_horizontal_flow": 1.6898854897275177,
+        "reversed_signed_horizontal_flow": 2.8842403708000615,
+        "expected_left_right_reversal": false
+      }
+    ],
+    "earliest_expected_reversal": null,
+    "lag_category": "no reversal",
+    "official_first_turn_flip": false,
+    "official_overall_flip": false,
+    "diagnostic_o1_to_o5_mean_original_signed_flow": 5.859146869929718,
+    "diagnostic_o1_to_o5_mean_reversed_signed_flow": 2.9058298589860034,
+    "diagnostic_o1_to_o5_expected_reversal": false
+  },
+  {
+    "state": "B",
+    "seed": 42,
+    "transitions": [
+      {
+        "transition": "O1->O2",
+        "transition_index": 1,
+        "original_signed_horizontal_flow": 2.92967900972709,
+        "reversed_signed_horizontal_flow": 1.9684281183223218,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O2->O3",
+        "transition_index": 2,
+        "original_signed_horizontal_flow": 1.4950526304157419,
+        "reversed_signed_horizontal_flow": 1.4403182041965268,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O3->O4",
+        "transition_index": 3,
+        "original_signed_horizontal_flow": 0.9288055696425447,
+        "reversed_signed_horizontal_flow": 1.6237290134178881,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O4->O5",
+        "transition_index": 4,
+        "original_signed_horizontal_flow": -0.19709560904744708,
+        "reversed_signed_horizontal_flow": 1.9732607185893238,
+        "expected_left_right_reversal": false
+      }
+    ],
+    "earliest_expected_reversal": null,
+    "lag_category": "no reversal",
+    "official_first_turn_flip": false,
+    "official_overall_flip": false,
+    "diagnostic_o1_to_o5_mean_original_signed_flow": 1.2891104001844824,
+    "diagnostic_o1_to_o5_mean_reversed_signed_flow": 1.7514340136315152,
+    "diagnostic_o1_to_o5_expected_reversal": false
+  },
+  {
+    "state": "B",
+    "seed": 43,
+    "transitions": [
+      {
+        "transition": "O1->O2",
+        "transition_index": 1,
+        "original_signed_horizontal_flow": 3.9754565863494906,
+        "reversed_signed_horizontal_flow": -6.388799699018258,
+        "expected_left_right_reversal": true
+      },
+      {
+        "transition": "O2->O3",
+        "transition_index": 2,
+        "original_signed_horizontal_flow": 0.8539952130819947,
+        "reversed_signed_horizontal_flow": -1.455741971778234,
+        "expected_left_right_reversal": true
+      },
+      {
+        "transition": "O3->O4",
+        "transition_index": 3,
+        "original_signed_horizontal_flow": 1.7991204276269397,
+        "reversed_signed_horizontal_flow": 1.1329201259882082,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O4->O5",
+        "transition_index": 4,
+        "original_signed_horizontal_flow": -0.3416435808452343,
+        "reversed_signed_horizontal_flow": 2.3478183137499626,
+        "expected_left_right_reversal": false
+      }
+    ],
+    "earliest_expected_reversal": "O1->O2",
+    "lag_category": "immediate",
+    "official_first_turn_flip": true,
+    "official_overall_flip": true,
+    "diagnostic_o1_to_o5_mean_original_signed_flow": 1.5717321615532978,
+    "diagnostic_o1_to_o5_mean_reversed_signed_flow": -1.0909508077645804,
+    "diagnostic_o1_to_o5_expected_reversal": true
+  },
+  {
+    "state": "B",
+    "seed": 44,
+    "transitions": [
+      {
+        "transition": "O1->O2",
+        "transition_index": 1,
+        "original_signed_horizontal_flow": 1.0105763021866077,
+        "reversed_signed_horizontal_flow": 0.37947755996944865,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O2->O3",
+        "transition_index": 2,
+        "original_signed_horizontal_flow": 0.009328524136566893,
+        "reversed_signed_horizontal_flow": 0.1221609285013192,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O3->O4",
+        "transition_index": 3,
+        "original_signed_horizontal_flow": 0.3230223641243572,
+        "reversed_signed_horizontal_flow": 0.05897595822420647,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O4->O5",
+        "transition_index": 4,
+        "original_signed_horizontal_flow": 0.0140064366566094,
+        "reversed_signed_horizontal_flow": 0.21762310669911739,
+        "expected_left_right_reversal": false
+      }
+    ],
+    "earliest_expected_reversal": null,
+    "lag_category": "no reversal",
+    "official_first_turn_flip": false,
+    "official_overall_flip": false,
+    "diagnostic_o1_to_o5_mean_original_signed_flow": 0.3392334067760353,
+    "diagnostic_o1_to_o5_mean_reversed_signed_flow": 0.19455938834852293,
+    "diagnostic_o1_to_o5_expected_reversal": false
+  },
+  {
+    "state": "C",
+    "seed": 42,
+    "transitions": [
+      {
+        "transition": "O1->O2",
+        "transition_index": 1,
+        "original_signed_horizontal_flow": 0.1479535476023862,
+        "reversed_signed_horizontal_flow": 0.11338470504631953,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O2->O3",
+        "transition_index": 2,
+        "original_signed_horizontal_flow": 0.2034683112295996,
+        "reversed_signed_horizontal_flow": 0.21940472453481527,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O3->O4",
+        "transition_index": 3,
+        "original_signed_horizontal_flow": 0.3458208653973834,
+        "reversed_signed_horizontal_flow": 0.29616898445088635,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O4->O5",
+        "transition_index": 4,
+        "original_signed_horizontal_flow": -0.050376470556634356,
+        "reversed_signed_horizontal_flow": 0.18845701107187715,
+        "expected_left_right_reversal": false
+      }
+    ],
+    "earliest_expected_reversal": null,
+    "lag_category": "no reversal",
+    "official_first_turn_flip": false,
+    "official_overall_flip": false,
+    "diagnostic_o1_to_o5_mean_original_signed_flow": 0.1617165634181837,
+    "diagnostic_o1_to_o5_mean_reversed_signed_flow": 0.20435385627597458,
+    "diagnostic_o1_to_o5_expected_reversal": false
+  },
+  {
+    "state": "C",
+    "seed": 43,
+    "transitions": [
+      {
+        "transition": "O1->O2",
+        "transition_index": 1,
+        "original_signed_horizontal_flow": 0.02188902541730073,
+        "reversed_signed_horizontal_flow": -0.4294332250925352,
+        "expected_left_right_reversal": true
+      },
+      {
+        "transition": "O2->O3",
+        "transition_index": 2,
+        "original_signed_horizontal_flow": -0.09421424580679773,
+        "reversed_signed_horizontal_flow": 0.326307317342221,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O3->O4",
+        "transition_index": 3,
+        "original_signed_horizontal_flow": 0.7424082276780638,
+        "reversed_signed_horizontal_flow": 0.6158146386852671,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O4->O5",
+        "transition_index": 4,
+        "original_signed_horizontal_flow": 0.017921552190559274,
+        "reversed_signed_horizontal_flow": 0.566937776970804,
+        "expected_left_right_reversal": false
+      }
+    ],
+    "earliest_expected_reversal": "O1->O2",
+    "lag_category": "immediate",
+    "official_first_turn_flip": true,
+    "official_overall_flip": true,
+    "diagnostic_o1_to_o5_mean_original_signed_flow": 0.17200113986978152,
+    "diagnostic_o1_to_o5_mean_reversed_signed_flow": 0.26990662697643925,
+    "diagnostic_o1_to_o5_expected_reversal": false
+  },
+  {
+    "state": "C",
+    "seed": 44,
+    "transitions": [
+      {
+        "transition": "O1->O2",
+        "transition_index": 1,
+        "original_signed_horizontal_flow": 0.030119195821013644,
+        "reversed_signed_horizontal_flow": -0.15289510913494578,
+        "expected_left_right_reversal": true
+      },
+      {
+        "transition": "O2->O3",
+        "transition_index": 2,
+        "original_signed_horizontal_flow": 0.07007495692739442,
+        "reversed_signed_horizontal_flow": -0.1800466316882985,
+        "expected_left_right_reversal": true
+      },
+      {
+        "transition": "O3->O4",
+        "transition_index": 3,
+        "original_signed_horizontal_flow": 0.17223812651892967,
+        "reversed_signed_horizontal_flow": -0.026457149077359632,
+        "expected_left_right_reversal": true
+      },
+      {
+        "transition": "O4->O5",
+        "transition_index": 4,
+        "original_signed_horizontal_flow": 0.013582310194006098,
+        "reversed_signed_horizontal_flow": -0.09196792224006092,
+        "expected_left_right_reversal": true
+      }
+    ],
+    "earliest_expected_reversal": "O1->O2",
+    "lag_category": "immediate",
+    "official_first_turn_flip": true,
+    "official_overall_flip": true,
+    "diagnostic_o1_to_o5_mean_original_signed_flow": 0.07150364736533596,
+    "diagnostic_o1_to_o5_mean_reversed_signed_flow": -0.1128417030351662,
+    "diagnostic_o1_to_o5_expected_reversal": true
+  },
+  {
+    "state": "D",
+    "seed": 42,
+    "transitions": [
+      {
+        "transition": "O1->O2",
+        "transition_index": 1,
+        "original_signed_horizontal_flow": 7.965899041773783,
+        "reversed_signed_horizontal_flow": -5.029137953232515,
+        "expected_left_right_reversal": true
+      },
+      {
+        "transition": "O2->O3",
+        "transition_index": 2,
+        "original_signed_horizontal_flow": 3.062881377576732,
+        "reversed_signed_horizontal_flow": -0.3423068763068589,
+        "expected_left_right_reversal": true
+      },
+      {
+        "transition": "O3->O4",
+        "transition_index": 3,
+        "original_signed_horizontal_flow": 1.8659248909320703,
+        "reversed_signed_horizontal_flow": -1.0829989814656786,
+        "expected_left_right_reversal": true
+      },
+      {
+        "transition": "O4->O5",
+        "transition_index": 4,
+        "original_signed_horizontal_flow": -3.6406326015709936,
+        "reversed_signed_horizontal_flow": -1.31513914778795,
+        "expected_left_right_reversal": false
+      }
+    ],
+    "earliest_expected_reversal": "O1->O2",
+    "lag_category": "immediate",
+    "official_first_turn_flip": true,
+    "official_overall_flip": true,
+    "diagnostic_o1_to_o5_mean_original_signed_flow": 2.313518177177898,
+    "diagnostic_o1_to_o5_mean_reversed_signed_flow": -1.9423957396982505,
+    "diagnostic_o1_to_o5_expected_reversal": true
+  },
+  {
+    "state": "D",
+    "seed": 43,
+    "transitions": [
+      {
+        "transition": "O1->O2",
+        "transition_index": 1,
+        "original_signed_horizontal_flow": 9.574679263874017,
+        "reversed_signed_horizontal_flow": -9.205405210337283,
+        "expected_left_right_reversal": true
+      },
+      {
+        "transition": "O2->O3",
+        "transition_index": 2,
+        "original_signed_horizontal_flow": 5.922671039757116,
+        "reversed_signed_horizontal_flow": -3.5688988607613727,
+        "expected_left_right_reversal": true
+      },
+      {
+        "transition": "O3->O4",
+        "transition_index": 3,
+        "original_signed_horizontal_flow": 5.490452176951136,
+        "reversed_signed_horizontal_flow": -1.1867816643166393,
+        "expected_left_right_reversal": true
+      },
+      {
+        "transition": "O4->O5",
+        "transition_index": 4,
+        "original_signed_horizontal_flow": -3.851569567179743,
+        "reversed_signed_horizontal_flow": 2.025490136964454,
+        "expected_left_right_reversal": false
+      }
+    ],
+    "earliest_expected_reversal": "O1->O2",
+    "lag_category": "immediate",
+    "official_first_turn_flip": true,
+    "official_overall_flip": true,
+    "diagnostic_o1_to_o5_mean_original_signed_flow": 4.284058228350632,
+    "diagnostic_o1_to_o5_mean_reversed_signed_flow": -2.98389889961271,
+    "diagnostic_o1_to_o5_expected_reversal": true
+  },
+  {
+    "state": "D",
+    "seed": 44,
+    "transitions": [
+      {
+        "transition": "O1->O2",
+        "transition_index": 1,
+        "original_signed_horizontal_flow": 9.612783277287791,
+        "reversed_signed_horizontal_flow": -5.101302812351439,
+        "expected_left_right_reversal": true
+      },
+      {
+        "transition": "O2->O3",
+        "transition_index": 2,
+        "original_signed_horizontal_flow": 4.597469751189273,
+        "reversed_signed_horizontal_flow": 0.5231303281395138,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O3->O4",
+        "transition_index": 3,
+        "original_signed_horizontal_flow": 5.548650658696668,
+        "reversed_signed_horizontal_flow": 0.8518762267013268,
+        "expected_left_right_reversal": false
+      },
+      {
+        "transition": "O4->O5",
+        "transition_index": 4,
+        "original_signed_horizontal_flow": 2.9962836189548785,
+        "reversed_signed_horizontal_flow": 0.30159608543449823,
+        "expected_left_right_reversal": false
+      }
+    ],
+    "earliest_expected_reversal": "O1->O2",
+    "lag_category": "immediate",
+    "official_first_turn_flip": true,
+    "official_overall_flip": true,
+    "diagnostic_o1_to_o5_mean_original_signed_flow": 5.688796826532153,
+    "diagnostic_o1_to_o5_mean_reversed_signed_flow": -0.856175043019025,
+    "diagnostic_o1_to_o5_expected_reversal": true
+  }
+]

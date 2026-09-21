@@ -1,0 +1,82 @@
+# =========================
+# Python / OS
+# =========================
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# =========================
+# Secrets
+# =========================
+.env
+*.pem
+*.key
+
+# =========================
+# Pretrained models
+# =========================
+data/models/
+models/
+huggingface/
+.cache/
+
+# Never commit model weights anywhere
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+
+# =========================
+# Raw / derived datasets
+# =========================
+data/episodes/
+data/processed/
+data/clips/
+data/datasets/
+data/wan_training/
+
+# =========================
+# Large experiment artifacts
+# Keep reports/json/csv, exclude weights/videos
+# =========================
+data/experiments/**/checkpoints/
+data/experiments/**/lora_weights/
+data/experiments/**/videos/
+data/experiments/**/*.mp4
+data/experiments/**/*.gif
+
+# =========================
+# Generic generated outputs
+# =========================
+checkpoints/
+outputs/
+tmp/
+temp/
+*.log
+
+# =========================
+# Keep final public demo
+# =========================
+!demo/
+!demo/*.mp4
+!demo/*.gif
+!demo/*.py
+!demo/*.json
+!demo/*.md
+
+# Local IDE / runtime config
+.vscode/
+_vizdoom.ini
+
+# Experiment caches
+**/cache/
+
+# Raw training step logs
+data/experiments/**/steps.jsonl
+data/experiments/**/continuation_*.jsonl
+
+# Historical experiment contact sheets
+data/experiments/**/contact_sheet.png

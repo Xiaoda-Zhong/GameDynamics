@@ -1,0 +1,247 @@
+{
+  "manifest_version": 1,
+  "source_clip_index": "/Users/xiaoda/Desktop/GameDynamics_starter/data/clips/my_way_home/episode_0000/clips.json",
+  "source_clip_index_sha256": "1310d230705a57fd208b5ff9a963ea00a275897a8859f62339c2edd134f0825e",
+  "source_episode": "/Users/xiaoda/Desktop/GameDynamics_starter/data/episodes/my_way_home/episode_0000",
+  "scenario_name": "my_way_home",
+  "strategy": "action_balanced",
+  "budget": 24,
+  "seed": 42,
+  "num_available_clips": 61,
+  "num_selected_clips": 24,
+  "declared_action_space": [
+    "MOVE_FORWARD",
+    "TURN_LEFT",
+    "TURN_RIGHT",
+    "NOOP",
+    "MOVE_FORWARD_LEFT",
+    "MOVE_FORWARD_RIGHT"
+  ],
+  "motion_binning": {
+    "method": "rank_based_motion_mean_tertiles",
+    "labels": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "sort_order": "motion_mean_ascending_then_clip_id",
+    "source_bin_counts": {
+      "low": 21,
+      "medium": 20,
+      "high": 20
+    },
+    "source_bin_motion_mean_ranges": {
+      "low": {
+        "min": 0.003753744465411054,
+        "max": 0.027156426275431404
+      },
+      "medium": {
+        "min": 0.027427041514317456,
+        "max": 0.03624739406577579
+      },
+      "high": {
+        "min": 0.03670342175667476,
+        "max": 0.055974573441736904
+      }
+    },
+    "quota_rule": "equal_with_remainder_in_label_order_then_capacity_redistribution",
+    "quota_redistribution_tie_break": "smallest_current_quota_then_low_medium_high"
+  },
+  "motion_bin_quotas": null,
+  "selection_metadata": {
+    "selection_version": 1,
+    "objective": "greedy_minimize_global_action_l1_to_uniform",
+    "seed_usage": "recorded_only_selection_is_deterministic",
+    "greedy_tie_break": "lowest_clip_id",
+    "joint_motion_bin_schedule": null,
+    "action_target": "uniform_over_declared_action_space",
+    "action_imbalance_metric": "l1_distance_to_uniform",
+    "action_imbalance_formula": "sum_a(abs(p_selected[a] - 1 / num_declared_actions))"
+  },
+  "selected_clip_ids": [
+    5,
+    6,
+    13,
+    14,
+    16,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    27,
+    28,
+    29,
+    32,
+    33,
+    34,
+    39,
+    41,
+    42,
+    43,
+    55,
+    59,
+    60
+  ],
+  "selected_clip_references": [
+    {
+      "clip_id": 5,
+      "source_clip_position": 5,
+      "source_record": "/clips/5"
+    },
+    {
+      "clip_id": 6,
+      "source_clip_position": 6,
+      "source_record": "/clips/6"
+    },
+    {
+      "clip_id": 13,
+      "source_clip_position": 13,
+      "source_record": "/clips/13"
+    },
+    {
+      "clip_id": 14,
+      "source_clip_position": 14,
+      "source_record": "/clips/14"
+    },
+    {
+      "clip_id": 16,
+      "source_clip_position": 16,
+      "source_record": "/clips/16"
+    },
+    {
+      "clip_id": 19,
+      "source_clip_position": 19,
+      "source_record": "/clips/19"
+    },
+    {
+      "clip_id": 20,
+      "source_clip_position": 20,
+      "source_record": "/clips/20"
+    },
+    {
+      "clip_id": 21,
+      "source_clip_position": 21,
+      "source_record": "/clips/21"
+    },
+    {
+      "clip_id": 22,
+      "source_clip_position": 22,
+      "source_record": "/clips/22"
+    },
+    {
+      "clip_id": 23,
+      "source_clip_position": 23,
+      "source_record": "/clips/23"
+    },
+    {
+      "clip_id": 25,
+      "source_clip_position": 25,
+      "source_record": "/clips/25"
+    },
+    {
+      "clip_id": 27,
+      "source_clip_position": 27,
+      "source_record": "/clips/27"
+    },
+    {
+      "clip_id": 28,
+      "source_clip_position": 28,
+      "source_record": "/clips/28"
+    },
+    {
+      "clip_id": 29,
+      "source_clip_position": 29,
+      "source_record": "/clips/29"
+    },
+    {
+      "clip_id": 32,
+      "source_clip_position": 32,
+      "source_record": "/clips/32"
+    },
+    {
+      "clip_id": 33,
+      "source_clip_position": 33,
+      "source_record": "/clips/33"
+    },
+    {
+      "clip_id": 34,
+      "source_clip_position": 34,
+      "source_record": "/clips/34"
+    },
+    {
+      "clip_id": 39,
+      "source_clip_position": 39,
+      "source_record": "/clips/39"
+    },
+    {
+      "clip_id": 41,
+      "source_clip_position": 41,
+      "source_record": "/clips/41"
+    },
+    {
+      "clip_id": 42,
+      "source_clip_position": 42,
+      "source_record": "/clips/42"
+    },
+    {
+      "clip_id": 43,
+      "source_clip_position": 43,
+      "source_record": "/clips/43"
+    },
+    {
+      "clip_id": 55,
+      "source_clip_position": 55,
+      "source_record": "/clips/55"
+    },
+    {
+      "clip_id": 59,
+      "source_clip_position": 59,
+      "source_record": "/clips/59"
+    },
+    {
+      "clip_id": 60,
+      "source_clip_position": 60,
+      "source_record": "/clips/60"
+    }
+  ],
+  "motion_bin_counts": {
+    "low": 6,
+    "medium": 8,
+    "high": 10
+  },
+  "aggregate_action_counts": {
+    "MOVE_FORWARD": 57,
+    "TURN_LEFT": 61,
+    "TURN_RIGHT": 63,
+    "NOOP": 56,
+    "MOVE_FORWARD_LEFT": 61,
+    "MOVE_FORWARD_RIGHT": 62
+  },
+  "aggregate_action_fractions": {
+    "MOVE_FORWARD": 0.15833333333333333,
+    "TURN_LEFT": 0.16944444444444445,
+    "TURN_RIGHT": 0.175,
+    "NOOP": 0.15555555555555556,
+    "MOVE_FORWARD_LEFT": 0.16944444444444445,
+    "MOVE_FORWARD_RIGHT": 0.17222222222222222
+  },
+  "summary_motion_statistics": {
+    "motion_mean_mean": 0.03370847691122734,
+    "motion_mean_std": 0.009730254813885952,
+    "motion_mean_min": 0.013592092913973224,
+    "motion_mean_max": 0.053980673042615376
+  },
+  "summary_action_balance_statistics": {
+    "target": "uniform_over_declared_action_space",
+    "metric": "l1_distance_to_uniform",
+    "formula": "sum_a(abs(p_selected[a] - 1 / num_declared_actions))",
+    "uniform_target_fraction": 0.16666666666666666,
+    "action_imbalance_score": 0.03888888888888889,
+    "mean_clip_entropy": 0.88809302635841,
+    "mean_dominant_action_fraction": 0.5444444444444444,
+    "mean_noop_fraction": 0.15555555555555556
+  },
+  "overlap_note": "Aggregate action counts are sample-level statistics across overlapping clips; they are not the unique source-episode transition distribution."
+}

@@ -1,0 +1,14 @@
+{
+  "samples": 16,
+  "transitions": 256,
+  "action_counts_by_id": {
+    "0": 46,
+    "1": 43,
+    "2": 22,
+    "3": 62,
+    "4": 32,
+    "5": 51
+  },
+  "adapter_trainable_parameters": 198336,
+  "zero_init_sanity": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6b1_vace_action_tiny/zero_init/sanity.json"
+}

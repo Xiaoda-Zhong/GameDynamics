@@ -1,0 +1,119 @@
+{
+  "milestone": "M6B-2 action-signal effect audit",
+  "audit_only": true,
+  "source_sample_id": "my_way_home_episode_0028_clip_000011",
+  "m6b1_official_classification": "C. EXPLICIT ACTION CONTROL FAIL",
+  "model_id": "Wan-AI/Wan2.1-VACE-1.3B-diffusers",
+  "model_revision": "ec4d2cb062b548996b179d493fdd05340de702a1",
+  "generic_prompt": "A first-person gameplay view in a retro 3D stone maze.",
+  "cache_index_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6b1_vace_action_tiny/train/cache/index.json",
+  "cache_index_sha256": "cd36bdd3046c7a308d28edc99b55b49cfd11f336bf3f8e0e1e2f2a6c65383ca8",
+  "target_and_o0_control_cache_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6b1_vace_action_tiny/train/cache/sample_00.pt",
+  "target_and_o0_control_cache_sha256": "cbb405eadb7168febe58cf07e1389b0731b20bc05ba071dbbef019e8c0090ad1",
+  "text_embedding_cache_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6b1_vace_action_tiny/train/cache/prompt.pt",
+  "text_embedding_cache_sha256": "8cbc22a53bac124c061bcd023c80ede5a36b24fe5de857565203fc1cc344d6a9",
+  "adapter_checkpoint_paths": {
+    "100": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6b1_vace_action_tiny/checkpoints/step_0100/adapter.pt",
+    "200": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6b1_vace_action_tiny/checkpoints/step_0200/adapter.pt",
+    "400": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6b1_vace_action_tiny/checkpoints/step_0400/adapter.pt",
+    "800": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6b1_vace_action_tiny/checkpoints/step_0800/adapter.pt"
+  },
+  "adapter_checkpoint_sha256": {
+    "100": "da9b82d61073cdfe2fb2e681f9d464bbfc9b6da38f185494b71ea392bd07d5a4",
+    "200": "d9597b222d014ba7e553b34fc479a6fbe616dc2ec5672747d433faf83a6bd709",
+    "400": "988a62851746b0c028fd49d22763abc4c4039c832183946bebb2bdd643935abb",
+    "800": "90f0268af07b79d1ce0e031c98631bc34dfe2d7084aeb1c02810433a08e6bfdb"
+  },
+  "action_ids": {
+    "original": [
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "reversed": [
+      5,
+      5,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "all_noop": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "seed": 42,
+  "num_frames": 17,
+  "resolution_wh": [
+    448,
+    256
+  ],
+  "scheduler": "UniPCMultistepScheduler from pinned VACE config, flow_shift 3.0, 30 steps",
+  "selected_scheduler_positions": [
+    {
+      "label": "early",
+      "index": 0,
+      "timestep": 999,
+      "sigma": 0.9999989867210388
+    },
+    {
+      "label": "middle",
+      "index": 14,
+      "timestep": 774,
+      "sigma": 0.7745211720466614
+    },
+    {
+      "label": "late",
+      "index": 29,
+      "timestep": 96,
+      "sigma": 0.09629421681165695
+    }
+  ],
+  "noisy_latent_construction": "Use one torch.float32 CUDA standard-normal tensor drawn with generator seed 42; for each scheduler sigma, z_t=(1-sigma)*cached real target latent + sigma*same noise, then cast to transformer BF16. Reuse bit-identical z_t within each three-action comparison. This is a fixed forward-noised real trajectory, not a rollout.",
+  "transformer_branch": "Conditional VACE transformer output with cached generic text embedding, cached native O0 control, control scale 1.0; no CFG combination or video decode",
+  "feature_precision": "Load adapter checkpoint strictly, cast to BF16 exactly as M6B-1 inference, measure projected features in FP32",
+  "relative_conditioning_strength": "L2 of action bias broadcast to all 16x28 spatial patches divided by L2 of frozen noisy patch-embedding output at the same temporal position, before addition",
+  "denoiser_relative_l2": "L2(output_A-output_B) divided by mean of L2(output_A) and L2(output_B), symmetric in pair order; FP32 metrics",
+  "global_temporal_scope": "Report all five latent positions and future-only positions 1..4; per-position metrics include 0..4",
+  "checkpoint_trajectory": "At middle scheduler position, repeat feature statistics and three pairwise denoiser comparisons for checkpoints 100,200,400,800",
+  "interpretation": "Exploratory A/B/C/D classification; no user-specified numeric cutoffs. Compare action-feature distinctness, broadcast bias/base ratio, pairwise denoiser effect relative to outputs, and M6B-1 failed semantic criteria; avoid new PASS/FAIL thresholds.",
+  "model_mutation_policy": "No training, weight updates, mask change, new data, video generation, or dependency changes"
+}

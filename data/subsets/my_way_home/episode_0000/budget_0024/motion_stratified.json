@@ -1,0 +1,251 @@
+{
+  "manifest_version": 1,
+  "source_clip_index": "/Users/xiaoda/Desktop/GameDynamics_starter/data/clips/my_way_home/episode_0000/clips.json",
+  "source_clip_index_sha256": "1310d230705a57fd208b5ff9a963ea00a275897a8859f62339c2edd134f0825e",
+  "source_episode": "/Users/xiaoda/Desktop/GameDynamics_starter/data/episodes/my_way_home/episode_0000",
+  "scenario_name": "my_way_home",
+  "strategy": "motion_stratified",
+  "budget": 24,
+  "seed": 42,
+  "num_available_clips": 61,
+  "num_selected_clips": 24,
+  "declared_action_space": [
+    "MOVE_FORWARD",
+    "TURN_LEFT",
+    "TURN_RIGHT",
+    "NOOP",
+    "MOVE_FORWARD_LEFT",
+    "MOVE_FORWARD_RIGHT"
+  ],
+  "motion_binning": {
+    "method": "rank_based_motion_mean_tertiles",
+    "labels": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "sort_order": "motion_mean_ascending_then_clip_id",
+    "source_bin_counts": {
+      "low": 21,
+      "medium": 20,
+      "high": 20
+    },
+    "source_bin_motion_mean_ranges": {
+      "low": {
+        "min": 0.003753744465411054,
+        "max": 0.027156426275431404
+      },
+      "medium": {
+        "min": 0.027427041514317456,
+        "max": 0.03624739406577579
+      },
+      "high": {
+        "min": 0.03670342175667476,
+        "max": 0.055974573441736904
+      }
+    },
+    "quota_rule": "equal_with_remainder_in_label_order_then_capacity_redistribution",
+    "quota_redistribution_tie_break": "smallest_current_quota_then_low_medium_high"
+  },
+  "motion_bin_quotas": {
+    "low": 8,
+    "medium": 8,
+    "high": 8
+  },
+  "selection_metadata": {
+    "selection_version": 1,
+    "objective": "equal_motion_tertile_coverage_with_seeded_sampling",
+    "seed_usage": "uniform_sampling_within_motion_bins",
+    "greedy_tie_break": null,
+    "joint_motion_bin_schedule": null,
+    "action_target": "uniform_over_declared_action_space",
+    "action_imbalance_metric": "l1_distance_to_uniform",
+    "action_imbalance_formula": "sum_a(abs(p_selected[a] - 1 / num_declared_actions))"
+  },
+  "selected_clip_ids": [
+    0,
+    3,
+    6,
+    7,
+    8,
+    10,
+    11,
+    14,
+    15,
+    17,
+    19,
+    20,
+    28,
+    29,
+    32,
+    36,
+    40,
+    47,
+    49,
+    51,
+    52,
+    57,
+    59,
+    60
+  ],
+  "selected_clip_references": [
+    {
+      "clip_id": 0,
+      "source_clip_position": 0,
+      "source_record": "/clips/0"
+    },
+    {
+      "clip_id": 3,
+      "source_clip_position": 3,
+      "source_record": "/clips/3"
+    },
+    {
+      "clip_id": 6,
+      "source_clip_position": 6,
+      "source_record": "/clips/6"
+    },
+    {
+      "clip_id": 7,
+      "source_clip_position": 7,
+      "source_record": "/clips/7"
+    },
+    {
+      "clip_id": 8,
+      "source_clip_position": 8,
+      "source_record": "/clips/8"
+    },
+    {
+      "clip_id": 10,
+      "source_clip_position": 10,
+      "source_record": "/clips/10"
+    },
+    {
+      "clip_id": 11,
+      "source_clip_position": 11,
+      "source_record": "/clips/11"
+    },
+    {
+      "clip_id": 14,
+      "source_clip_position": 14,
+      "source_record": "/clips/14"
+    },
+    {
+      "clip_id": 15,
+      "source_clip_position": 15,
+      "source_record": "/clips/15"
+    },
+    {
+      "clip_id": 17,
+      "source_clip_position": 17,
+      "source_record": "/clips/17"
+    },
+    {
+      "clip_id": 19,
+      "source_clip_position": 19,
+      "source_record": "/clips/19"
+    },
+    {
+      "clip_id": 20,
+      "source_clip_position": 20,
+      "source_record": "/clips/20"
+    },
+    {
+      "clip_id": 28,
+      "source_clip_position": 28,
+      "source_record": "/clips/28"
+    },
+    {
+      "clip_id": 29,
+      "source_clip_position": 29,
+      "source_record": "/clips/29"
+    },
+    {
+      "clip_id": 32,
+      "source_clip_position": 32,
+      "source_record": "/clips/32"
+    },
+    {
+      "clip_id": 36,
+      "source_clip_position": 36,
+      "source_record": "/clips/36"
+    },
+    {
+      "clip_id": 40,
+      "source_clip_position": 40,
+      "source_record": "/clips/40"
+    },
+    {
+      "clip_id": 47,
+      "source_clip_position": 47,
+      "source_record": "/clips/47"
+    },
+    {
+      "clip_id": 49,
+      "source_clip_position": 49,
+      "source_record": "/clips/49"
+    },
+    {
+      "clip_id": 51,
+      "source_clip_position": 51,
+      "source_record": "/clips/51"
+    },
+    {
+      "clip_id": 52,
+      "source_clip_position": 52,
+      "source_record": "/clips/52"
+    },
+    {
+      "clip_id": 57,
+      "source_clip_position": 57,
+      "source_record": "/clips/57"
+    },
+    {
+      "clip_id": 59,
+      "source_clip_position": 59,
+      "source_record": "/clips/59"
+    },
+    {
+      "clip_id": 60,
+      "source_clip_position": 60,
+      "source_record": "/clips/60"
+    }
+  ],
+  "motion_bin_counts": {
+    "low": 8,
+    "medium": 8,
+    "high": 8
+  },
+  "aggregate_action_counts": {
+    "MOVE_FORWARD": 69,
+    "TURN_LEFT": 79,
+    "TURN_RIGHT": 49,
+    "NOOP": 59,
+    "MOVE_FORWARD_LEFT": 40,
+    "MOVE_FORWARD_RIGHT": 64
+  },
+  "aggregate_action_fractions": {
+    "MOVE_FORWARD": 0.19166666666666668,
+    "TURN_LEFT": 0.21944444444444444,
+    "TURN_RIGHT": 0.1361111111111111,
+    "NOOP": 0.1638888888888889,
+    "MOVE_FORWARD_LEFT": 0.1111111111111111,
+    "MOVE_FORWARD_RIGHT": 0.17777777777777778
+  },
+  "summary_motion_statistics": {
+    "motion_mean_mean": 0.03063786721897452,
+    "motion_mean_std": 0.011243105970987802,
+    "motion_mean_min": 0.008166630187196898,
+    "motion_mean_max": 0.055974573441736904
+  },
+  "summary_action_balance_statistics": {
+    "target": "uniform_over_declared_action_space",
+    "metric": "l1_distance_to_uniform",
+    "formula": "sum_a(abs(p_selected[a] - 1 / num_declared_actions))",
+    "uniform_target_fraction": 0.16666666666666666,
+    "action_imbalance_score": 0.17777777777777778,
+    "mean_clip_entropy": 0.7285914360062832,
+    "mean_dominant_action_fraction": 0.6333333333333333,
+    "mean_noop_fraction": 0.1638888888888889
+  },
+  "overlap_note": "Aggregate action counts are sample-level statistics across overlapping clips; they are not the unique source-episode transition distribution."
+}

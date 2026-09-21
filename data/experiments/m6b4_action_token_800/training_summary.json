@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "optimizer_steps": 800,
+  "resume_from_step": 32,
+  "continuation_steps": 768,
+  "adapter_trainable_parameters": 3684864,
+  "pretrained_vace_unchanged": true,
+  "pretrained_vae_text_not_loaded_for_training": true,
+  "sample_counts": {
+    "0": 50,
+    "1": 50,
+    "2": 50,
+    "3": 50,
+    "4": 50,
+    "5": 50,
+    "6": 50,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50,
+    "11": 50,
+    "12": 50,
+    "13": 50,
+    "14": 50,
+    "15": 50
+  },
+  "continuation_runtime_seconds": 299.961,
+  "peak_gpu_allocated_mib": 4625.1,
+  "peak_gpu_reserved_mib": 5010.0,
+  "checkpoint_steps": [
+    100,
+    200,
+    400,
+    800
+  ],
+  "log_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6b4_action_token_800/steps.jsonl"
+}

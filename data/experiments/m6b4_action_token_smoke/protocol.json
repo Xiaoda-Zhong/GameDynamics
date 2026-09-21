@@ -1,0 +1,29 @@
+{
+  "model": "/root/autodl-tmp/GameDynamics_starter/data/models/Wan2.1-VACE-1.3B-diffusers",
+  "manifest_sha256": "7d56952b72cc7c1075319ee1aa038c04b6b250913826f111f3bf63c9c8def991",
+  "cache_index_sha256": "cd36bdd3046c7a308d28edc99b55b49cfd11f336bf3f8e0e1e2f2a6c65383ca8",
+  "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+  "steps": 32,
+  "seed": 42,
+  "optimizer": "AdamW",
+  "lr": 0.0002,
+  "batch_size": 1,
+  "gradient_accumulation": 1,
+  "backbone_dtype": "bfloat16",
+  "trainable_parameters": 3684864,
+  "blocks": [
+    3,
+    11,
+    19,
+    27
+  ],
+  "native_o0_and_latent_mask_unchanged": true,
+  "future_only_loss_latent_positions": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "all_16_cached_samples_and_actions_valid": true,
+  "zero_init_exact_baseline_equality_rechecked": true
+}

@@ -1,0 +1,129 @@
+{
+  "milestone": "M6B-4 action-token cross-attention official pilot",
+  "model_id": "Wan-AI/Wan2.1-VACE-1.3B-diffusers",
+  "model_revision": "ec4d2cb062b548996b179d493fdd05340de702a1",
+  "model_local_path": "/root/autodl-tmp/GameDynamics_starter/data/models/Wan2.1-VACE-1.3B-diffusers",
+  "pipeline": "diffusers.WanVACEPipeline",
+  "diffusers_version": "0.40.0",
+  "source_sample_id": "my_way_home_episode_0028_clip_000011",
+  "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000088.png",
+  "source_o0_sha256": "49a23e82fa090c6410cb781fb875669187de9400657066bc9c7213994147b50d",
+  "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+  "negative_prompt": null,
+  "height": 256,
+  "width": 448,
+  "num_frames": 17,
+  "fps": 8,
+  "inference_steps": 30,
+  "guidance_scale": 5.0,
+  "flow_shift": 3.0,
+  "conditioning_scale": 1.0,
+  "dtype": "BF16 transformer/text; FP32 VAE; BF16 adapter during inference",
+  "memory_policy": "Diffusers model CPU offload, unchanged from M6A-4",
+  "native_vace_conditioning": "Exact real O0 bicubic-resized in memory to 448x256; RGB(128,128,128) placeholders for frames 1..16; 17 full-frame masks with black O0 and white frames 1..16. Native latent-mask compression is unchanged.",
+  "action_injection": "Per-block cross-attention to four aligned action tokens for each future temporal latent; observed latent 0 receives no direct residual.",
+  "output_policy": "No generated-frame replacement; lossless RGB H.264 MP4",
+  "action_to_id": {
+    "MOVE_FORWARD": 0,
+    "TURN_LEFT": 1,
+    "TURN_RIGHT": 2,
+    "NOOP": 3,
+    "MOVE_FORWARD_LEFT": 4,
+    "MOVE_FORWARD_RIGHT": 5
+  },
+  "conditions": {
+    "original": [
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "reversed": [
+      5,
+      5,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "all_noop": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "architecture": "16 separate action-plus-time tokens; masked four-head cross-attention residual after main blocks 3,11,19,27",
+  "trainable_adapter_parameters": 3684864,
+  "checkpoint_steps": [
+    100,
+    200,
+    400,
+    800
+  ],
+  "trajectory_conditions": [
+    "original",
+    "reversed"
+  ],
+  "trajectory_seed": 42,
+  "native_vace_mask_behavior_unchanged": true,
+  "checkpoints": {
+    "100": {
+      "path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6b4_action_token_800/checkpoints/step_0100/adapter.pt",
+      "sha256": "a7a7cd85e7ee1817cf58d274ab42f3a819ae3e84c71ee9acd0399966b009077b"
+    },
+    "200": {
+      "path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6b4_action_token_800/checkpoints/step_0200/adapter.pt",
+      "sha256": "40ac189f029dbd955d7fea1c22e5907cfca5612e154c4276f91245aad863f98a"
+    },
+    "400": {
+      "path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6b4_action_token_800/checkpoints/step_0400/adapter.pt",
+      "sha256": "fc3d471b80c84b1715c2b053f8e6b18a9da85f638193691ab17379ca05f40ef6"
+    },
+    "800": {
+      "path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6b4_action_token_800/checkpoints/step_0800/adapter.pt",
+      "sha256": "cd002d1138861c5e353092102d027f2f047f4cb81d7c219f94b83cf37405ce19"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# Install a CUDA-compatible PyTorch build for the rented GPU first.
+torch>=2.4
+diffusers>=0.35.1
+transformers>=4.49
+accelerate>=1.2
+safetensors>=0.4
+sentencepiece>=0.2
+ftfy>=6.2
+imageio[ffmpeg]>=2.35
+PyYAML>=6.0
+huggingface_hub[cli]>=0.30

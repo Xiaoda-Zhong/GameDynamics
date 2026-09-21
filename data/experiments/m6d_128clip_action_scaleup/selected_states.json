@@ -1,0 +1,147 @@
+{
+  "milestone": "M6C",
+  "selection_rule": "All 587 VAL/TEST clip O0s, sorted VAL then TEST by official manifest order. Bicubic RGB 56x32 features; first is maximum mean-squared distance from candidate centroid. At each later pick, rank new-episode candidates by descending minimum mean-squared feature distance, ties by earlier manifest order; take the first whose exact 448x256 O0 SSIM is <0.45 to every selected O0. If none qualifies, take the highest-ranked candidate.",
+  "candidate_count": 587,
+  "source_split_sha256": {
+    "train": "4b445a2b7b2c7046ced3942559782f1f22c096dbe87af8d3cb1ebe15c6864c5d",
+    "val": "493e7338925230bfcf9c6e9540191f64f95a13a7379de7ec67c36beaebf7677f",
+    "test": "a133a34409f0678609c39b20cd048dd2899e15c4e363403d221567cd5d3d027a"
+  },
+  "tiny_train_manifest_sha256": "7d56952b72cc7c1075319ee1aa038c04b6b250913826f111f3bf63c9c8def991",
+  "train_sample_ids": [
+    "my_way_home_episode_0000_clip_000008",
+    "my_way_home_episode_0000_clip_000038",
+    "my_way_home_episode_0004_clip_000022",
+    "my_way_home_episode_0005_clip_000048",
+    "my_way_home_episode_0005_clip_000053",
+    "my_way_home_episode_0009_clip_000055",
+    "my_way_home_episode_0010_clip_000058",
+    "my_way_home_episode_0028_clip_000011",
+    "my_way_home_episode_0030_clip_000048",
+    "my_way_home_episode_0036_clip_000025",
+    "my_way_home_episode_0038_clip_000028",
+    "my_way_home_episode_0039_clip_000002",
+    "my_way_home_episode_0041_clip_000019",
+    "my_way_home_episode_0043_clip_000031",
+    "my_way_home_episode_0048_clip_000031",
+    "my_way_home_episode_0050_clip_000037"
+  ],
+  "train_episode_ids": [
+    "episode_0000",
+    "episode_0002",
+    "episode_0003",
+    "episode_0004",
+    "episode_0005",
+    "episode_0009",
+    "episode_0010",
+    "episode_0011",
+    "episode_0012",
+    "episode_0013",
+    "episode_0016",
+    "episode_0018",
+    "episode_0019",
+    "episode_0020",
+    "episode_0021",
+    "episode_0022",
+    "episode_0023",
+    "episode_0024",
+    "episode_0025",
+    "episode_0026",
+    "episode_0027",
+    "episode_0028",
+    "episode_0029",
+    "episode_0030",
+    "episode_0031",
+    "episode_0032",
+    "episode_0033",
+    "episode_0035",
+    "episode_0036",
+    "episode_0037",
+    "episode_0038",
+    "episode_0039",
+    "episode_0041",
+    "episode_0042",
+    "episode_0043",
+    "episode_0044",
+    "episode_0045",
+    "episode_0046",
+    "episode_0048",
+    "episode_0049",
+    "episode_0050"
+  ],
+  "states": [
+    {
+      "state": "A",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0040_clip_000026",
+      "episode_id": "episode_0040",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0040/rgb/000208.png",
+      "source_manifest": "/root/autodl-tmp/GameDynamics_starter/data/datasets/my_way_home/test.json",
+      "start_observation_index": 208,
+      "source_o0_sha256": "2cdb5dbfbaa62c0e76324869b43ff2e5bd2e21a241d0926fafbe0fa314ed5b5a",
+      "feature_distance_from_previous_minimum": null
+    },
+    {
+      "state": "B",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0017_clip_000031",
+      "episode_id": "episode_0017",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0017/rgb/000248.png",
+      "source_manifest": "/root/autodl-tmp/GameDynamics_starter/data/datasets/my_way_home/test.json",
+      "start_observation_index": 248,
+      "source_o0_sha256": "cba0bd220fa47fb93f9b8711b757c0060a5d58673044dcd9bc9b68790f5df400",
+      "feature_distance_from_previous_minimum": 0.21307411789894104
+    },
+    {
+      "state": "C",
+      "split": "val",
+      "sample_id": "my_way_home_episode_0014_clip_000017",
+      "episode_id": "episode_0014",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0014/rgb/000136.png",
+      "source_manifest": "/root/autodl-tmp/GameDynamics_starter/data/datasets/my_way_home/val.json",
+      "start_observation_index": 136,
+      "source_o0_sha256": "01a416ba461d9936488385f468d81040f6b05f8b024c730ccc5e16373c92f545",
+      "feature_distance_from_previous_minimum": 0.1629668027162552
+    },
+    {
+      "state": "D",
+      "split": "test",
+      "sample_id": "my_way_home_episode_0007_clip_000006",
+      "episode_id": "episode_0007",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0007/rgb/000048.png",
+      "source_manifest": "/root/autodl-tmp/GameDynamics_starter/data/datasets/my_way_home/test.json",
+      "start_observation_index": 48,
+      "source_o0_sha256": "46d434ff9174ca99f11e4ec490f9696d493c9de86580d007f8f1dbf5fe43b5ca",
+      "feature_distance_from_previous_minimum": 0.09564562886953354
+    }
+  ],
+  "pairwise_o0_ssim": [
+    [
+      1.0,
+      0.28677695989608765,
+      0.16011947393417358,
+      0.2780427038669586
+    ],
+    [
+      0.28677695989608765,
+      1.0,
+      0.24493329226970673,
+      0.2378169149160385
+    ],
+    [
+      0.16011947393417358,
+      0.24493329226970673,
+      1.0,
+      0.15353208780288696
+    ],
+    [
+      0.2780427038669586,
+      0.2378169149160385,
+      0.15353208780288696,
+      1.0
+    ]
+  ],
+  "all_episodes_distinct": true,
+  "none_in_training_16": true,
+  "none_in_train_split": true
+}

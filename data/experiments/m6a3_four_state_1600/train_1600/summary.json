@@ -1,0 +1,97 @@
+{
+  "framework": "Pinned Finetrainers Wan ControlTrainer Control LoRA",
+  "finetrainers_commit": "7c238443b7f102d3cfb4425caabd629e2ee1c02b",
+  "model": "/root/autodl-tmp/models/Wan2.1-T2V-1.3B-Diffusers",
+  "source_manifest": "/root/autodl-tmp/GameDynamics_starter/data/wan_training/my_way_home/overfit_0016/manifest.jsonl",
+  "source_manifest_sha256": "7d56952b72cc7c1075319ee1aa038c04b6b250913826f111f3bf63c9c8def991",
+  "dataset_size": 4,
+  "training_sample_id": null,
+  "training_sample_ids": [
+    "my_way_home_episode_0028_clip_000011",
+    "my_way_home_episode_0005_clip_000053",
+    "my_way_home_episode_0010_clip_000058",
+    "my_way_home_episode_0038_clip_000028"
+  ],
+  "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+  "per_state_sample_counts": {
+    "my_way_home_episode_0028_clip_000011": 400,
+    "my_way_home_episode_0005_clip_000053": 400,
+    "my_way_home_episode_0010_clip_000058": 400,
+    "my_way_home_episode_0038_clip_000028": 400
+  },
+  "precomputed_state_order": [
+    "my_way_home_episode_0028_clip_000011",
+    "my_way_home_episode_0005_clip_000053",
+    "my_way_home_episode_0010_clip_000058",
+    "my_way_home_episode_0038_clip_000028"
+  ],
+  "steps": 1600,
+  "seed": 42,
+  "frames": 17,
+  "height": 256,
+  "width": 448,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 1,
+  "dtype": "bf16",
+  "rank": 128,
+  "lora_alpha": 128,
+  "control_type": "none",
+  "frame_conditioning_type": "index",
+  "frame_conditioning_index": 0,
+  "control_injection": "patch_embedding",
+  "original_in_channels": 16,
+  "expanded_in_channels": 32,
+  "injection_rank": 1536,
+  "target_module_pattern": "(^patch_embedding$)|(blocks.*(to_q|to_k|to_v|to_out.0|ff.net.0.proj|ff.net.2))",
+  "target_module_count": 241,
+  "target_module_examples": [
+    "patch_embedding",
+    "blocks.0.attn1.to_q",
+    "blocks.0.attn1.to_k",
+    "blocks.0.attn1.to_v",
+    "blocks.0.attn1.to_out.0",
+    "blocks.0.attn2.to_q",
+    "blocks.0.attn2.to_k",
+    "blocks.0.attn2.to_v",
+    "blocks.0.attn2.to_out.0",
+    "blocks.1.attn1.to_q"
+  ],
+  "trainable_parameters": 96927744,
+  "learning_rate": 2e-05,
+  "lr_scheduler": "constant_with_warmup",
+  "lr_warmup_steps": 160,
+  "initial_loss": 0.18648216128349304,
+  "final_loss": 0.07978809624910355,
+  "mean_loss_first_half": 0.10813872577622533,
+  "mean_loss_second_half": 0.08143791555427014,
+  "max_lora_grad_norm": 7.968088626861572,
+  "runtime_seconds": 968.14,
+  "peak_gpu_vram_mib_observed": 11586,
+  "checkpoint_paths": {
+    "200": {
+      "path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/lora_weights/000200",
+      "adapter_bytes": 387769656
+    },
+    "400": {
+      "path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/lora_weights/000400",
+      "adapter_bytes": 387769656
+    },
+    "800": {
+      "path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/lora_weights/000800",
+      "adapter_bytes": 387769656
+    },
+    "1600": {
+      "path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/lora_weights/001600",
+      "adapter_bytes": 387769656
+    }
+  },
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "diffusers": "0.40.0",
+    "transformers": "5.17.0",
+    "accelerate": "1.15.0",
+    "peft": "0.21.0",
+    "datasets": "3.6.0",
+    "decord": "0.6.0"
+  }
+}

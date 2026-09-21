@@ -1,0 +1,97 @@
+{
+  "milestone": "M6G-0A held-out flip decomposition",
+  "source_metrics_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6f2_action_contrastive_128_6400/eval/metrics.json",
+  "source_metrics_sha256": "55a163d66f0032795040852796470e7e95646c2ea78f501b823787347bdcd0d7",
+  "source": "Saved M6F-2 metrics matched_pairs and per-video segment_mean_signed_u; no video decode or flow recomputation",
+  "source_flow_sign_convention": "positive raw u means left-turn camera motion; negative means right-turn",
+  "first_turn": "A1 only: ORIGINAL signed u > 0 and REVERSED signed u < 0",
+  "final_turn": "mean A10..A15: ORIGINAL signed u < 0 and REVERSED signed u > 0",
+  "observed_O0_to_O1_excluded": true,
+  "aggregate": {
+    "pairs": 12,
+    "first_segment_flips": 7,
+    "final_segment_flips": 11,
+    "both_segments_correct": 7,
+    "first_only_failures": 4,
+    "final_only_failures": 0,
+    "both_failures": 1
+  },
+  "by_state": {
+    "A": {
+      "pairs": 3,
+      "first_segment_flips": 1,
+      "final_segment_flips": 3,
+      "both_segments_correct": 1,
+      "first_only_failures": 2,
+      "final_only_failures": 0,
+      "both_failures": 0
+    },
+    "B": {
+      "pairs": 3,
+      "first_segment_flips": 1,
+      "final_segment_flips": 2,
+      "both_segments_correct": 1,
+      "first_only_failures": 1,
+      "final_only_failures": 0,
+      "both_failures": 1
+    },
+    "C": {
+      "pairs": 3,
+      "first_segment_flips": 2,
+      "final_segment_flips": 3,
+      "both_segments_correct": 2,
+      "first_only_failures": 1,
+      "final_only_failures": 0,
+      "both_failures": 0
+    },
+    "D": {
+      "pairs": 3,
+      "first_segment_flips": 3,
+      "final_segment_flips": 3,
+      "both_segments_correct": 3,
+      "first_only_failures": 0,
+      "final_only_failures": 0,
+      "both_failures": 0
+    }
+  },
+  "by_seed": {
+    "42": {
+      "pairs": 4,
+      "first_segment_flips": 1,
+      "final_segment_flips": 4,
+      "both_segments_correct": 1,
+      "first_only_failures": 3,
+      "final_only_failures": 0,
+      "both_failures": 0
+    },
+    "43": {
+      "pairs": 4,
+      "first_segment_flips": 4,
+      "final_segment_flips": 4,
+      "both_segments_correct": 4,
+      "first_only_failures": 0,
+      "final_only_failures": 0,
+      "both_failures": 0
+    },
+    "44": {
+      "pairs": 4,
+      "first_segment_flips": 2,
+      "final_segment_flips": 3,
+      "both_segments_correct": 2,
+      "first_only_failures": 1,
+      "final_only_failures": 0,
+      "both_failures": 1
+    }
+  },
+  "failure_categories": {
+    "first_only": 4,
+    "final_only": 0,
+    "both": 1,
+    "none": 7
+  },
+  "dominant_failure_location": "A. first-turn segment",
+  "model_forwards": 0,
+  "video_regenerations": 0,
+  "video_decodes": 0,
+  "metric_or_threshold_changes": 0
+}

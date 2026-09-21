@@ -1,0 +1,111 @@
+{
+  "experiment": "M6A-4 VACE hard first-frame conditioning smoke test",
+  "model_id": "Wan-AI/Wan2.1-VACE-1.3B-diffusers",
+  "model_revision": "ec4d2cb062b548996b179d493fdd05340de702a1",
+  "model_local_path": "/root/autodl-tmp/GameDynamics_starter/data/models/Wan2.1-VACE-1.3B-diffusers",
+  "pipeline": "diffusers.WanVACEPipeline",
+  "diffusers_version": "0.40.0",
+  "source_manifest": "/root/autodl-tmp/GameDynamics_starter/data/wan_training/my_way_home/overfit_0016/manifest.jsonl",
+  "source_manifest_sha256": "7d56952b72cc7c1075319ee1aa038c04b6b250913826f111f3bf63c9c8def991",
+  "selected_states": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/selected_states.json",
+  "selected_states_sha256": "3adaee00da9ce6b4f9ea00d8b2183a819a928793215bda6b171a8cf43a4bfd99",
+  "states": [
+    {
+      "label": "A",
+      "sample_id": "my_way_home_episode_0028_clip_000011",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000088.png",
+      "source_o0_sha256": "49a23e82fa090c6410cb781fb875669187de9400657066bc9c7213994147b50d",
+      "source_rgb_frames_0_to_3": [
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000088.png",
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000089.png",
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000090.png",
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000091.png"
+      ],
+      "source_rgb_frames_0_to_3_sha256": [
+        "49a23e82fa090c6410cb781fb875669187de9400657066bc9c7213994147b50d",
+        "7f215e6d03a426bdad19817b09fe381fafe80bc6b80a36cdc5ddf1ac92359c2d",
+        "7b6b3276293458aa25283afe9046cc06c70fa25cfe49359902f79a89d42c8a75",
+        "dfcd8d887e0e08dd04b6ba9a088a950fc6573d6a18baa5e4a39c84d5cc8bf7b2"
+      ]
+    },
+    {
+      "label": "B",
+      "sample_id": "my_way_home_episode_0005_clip_000053",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0005/rgb/000424.png",
+      "source_o0_sha256": "c803c950a8891637afc40dc9d07a585a0d71f1e23a8284f9b51ed8dba8002bc2",
+      "source_rgb_frames_0_to_3": [
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0005/rgb/000424.png",
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0005/rgb/000425.png",
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0005/rgb/000426.png",
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0005/rgb/000427.png"
+      ],
+      "source_rgb_frames_0_to_3_sha256": [
+        "c803c950a8891637afc40dc9d07a585a0d71f1e23a8284f9b51ed8dba8002bc2",
+        "c803c950a8891637afc40dc9d07a585a0d71f1e23a8284f9b51ed8dba8002bc2",
+        "c803c950a8891637afc40dc9d07a585a0d71f1e23a8284f9b51ed8dba8002bc2",
+        "c803c950a8891637afc40dc9d07a585a0d71f1e23a8284f9b51ed8dba8002bc2"
+      ]
+    },
+    {
+      "label": "C",
+      "sample_id": "my_way_home_episode_0010_clip_000058",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0010/rgb/000464.png",
+      "source_o0_sha256": "b87eb8b38526825df8d1683f2f87d104a3161835fa37349ed1b1a466989f02e6",
+      "source_rgb_frames_0_to_3": [
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0010/rgb/000464.png",
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0010/rgb/000465.png",
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0010/rgb/000466.png",
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0010/rgb/000467.png"
+      ],
+      "source_rgb_frames_0_to_3_sha256": [
+        "b87eb8b38526825df8d1683f2f87d104a3161835fa37349ed1b1a466989f02e6",
+        "2bdcf9978cd505d3ef497cc50e5f7c2f32f217d17e1c02aa85e6515e82057c44",
+        "800818dd6ddbf67574967ae5e9b05a05a62daf8a19e7fef6b3df0d6328fd3638",
+        "bb935aad56edc9bf4797068829ed9a5aa67bdc9ae96c0d3e50d81878fe9446d2"
+      ]
+    },
+    {
+      "label": "D",
+      "sample_id": "my_way_home_episode_0038_clip_000028",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0038/rgb/000224.png",
+      "source_o0_sha256": "d54e8dfadc1c99fea14521fd510e0c18ce80248f5ac3ac9896a3963fdb97eb1a",
+      "source_rgb_frames_0_to_3": [
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0038/rgb/000224.png",
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0038/rgb/000225.png",
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0038/rgb/000226.png",
+        "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0038/rgb/000227.png"
+      ],
+      "source_rgb_frames_0_to_3_sha256": [
+        "d54e8dfadc1c99fea14521fd510e0c18ce80248f5ac3ac9896a3963fdb97eb1a",
+        "d8a9a61730d8dd985463a5b7b20b502a77eafe36265dabcdb7d6c6a90e33723b",
+        "770c0086a4d361bfec52688be96d3b2f4bf7a726a175d95645b0a9dfc3d742d0",
+        "daf6cc64875a490ce12ae7736bbd755876b7b6e807bb6acf503fe828ff702d38"
+      ]
+    }
+  ],
+  "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+  "negative_prompt": null,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "height": 256,
+  "width": 448,
+  "num_frames": 17,
+  "fps": 8,
+  "inference_steps": 30,
+  "guidance_scale": 5.0,
+  "flow_shift": 3.0,
+  "conditioning_scale": 1.0,
+  "dtype": "bfloat16 model and text encoder; float32 VAE",
+  "memory_policy": "Diffusers sequential model CPU offload; no quantization or package change",
+  "conditioning_preparation": "Load the exact real O0 PNG; bicubic-resize in memory to 448x256 using the pinned M6A source_frame_rgb preprocessing; round to uint8 PIL RGB. Give VACE this image at frame 0 and uniform RGB(128,128,128) placeholders at frames 1..16.",
+  "mask_logic": "17 full-frame PIL L masks at 448x256: frame 0 is black (0, conditioned), frames 1..16 white (255, generated). Verify the installed pipeline preprocesses them to 0 and 1 respectively and passes nonzero O0 conditioning latents.",
+  "output_policy": "No post-generation frame replacement or compositing. Save the pipeline output as lossless RGB H.264 MP4, then compute all official metrics from decoded MP4 frames.",
+  "frame0_ssim_minimum_each": 0.95,
+  "future_state_id_minimum_correct_of_12": 10,
+  "future_median_margin_minimum": 0.05,
+  "early_future_score": "For each candidate, mean RGB SSIM of generated frames 1,2,3 against that real trajectory's O1,O2,O3",
+  "ssim": "11x11 Gaussian sigma=1.5, valid pixels, RGB-channel mean, range=1"
+}

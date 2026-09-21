@@ -1,0 +1,7 @@
+{
+  "status": "aborted_invalid_smoke",
+  "reason": "Runner called transformer.to(device=cuda,dtype=bfloat16), causing Diffusers to warn protected FP32 VACE modules were recast. Stopped manually; exclude all 63 logged steps and the provisional smoke gate from official training. No checkpoint was saved.",
+  "logged_steps": 63,
+  "official_checkpoints_saved": 0,
+  "mechanism_or_threshold_changed": false
+}

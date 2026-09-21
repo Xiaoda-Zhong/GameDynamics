@@ -1,0 +1,32 @@
+{
+  "source_milestone": "M6F-2",
+  "state": "D",
+  "seed": 43,
+  "sample_id": "my_way_home_episode_0007_clip_000006",
+  "episode_id": "episode_0007",
+  "split": "test",
+  "first_segment_expected_flip": true,
+  "final_segment_expected_flip": true,
+  "source_videos": [
+    {
+      "condition": "original",
+      "path": "data/experiments/m6f2_action_contrastive_128_6400/eval/videos/state_D_original_seed_43.mp4",
+      "sha256": "22b60b104ecd8e8a812e7f5620d31be279feded0b0770e51e5934025e7d075c8"
+    },
+    {
+      "condition": "reversed",
+      "path": "data/experiments/m6f2_action_contrastive_128_6400/eval/videos/state_D_reversed_seed_43.mp4",
+      "sha256": "cdbd39a653c2ceb5b623c2e0c70e4fe6e3b280d82e9389456dd5a5db0cfeb430"
+    },
+    {
+      "condition": "all_noop",
+      "path": "data/experiments/m6f2_action_contrastive_128_6400/eval/videos/state_D_all_noop_seed_43.mp4",
+      "sha256": "ab286e3d4e5dfb749c78da8282a023244274162e406f48c8bca7aa35e10a5add"
+    }
+  ],
+  "composition": "Native-size decoded frames pasted without crop, image filtering, frame replacement, or retiming; labels and timelines outside video panels. MP4 is presentation re-encoding; GIF is a scaled preview.",
+  "source_frames_per_video": 17,
+  "source_fps": 8.0,
+  "mp4_sha256": "d84bc94ee189989bb62a43e823b77925f39b4888dca67228af2de2433d8f0e80",
+  "gif_sha256": "30e09fa80a5cf4fa564bd103941a44f855f04b96ee9367f519b15ee870583478"
+}

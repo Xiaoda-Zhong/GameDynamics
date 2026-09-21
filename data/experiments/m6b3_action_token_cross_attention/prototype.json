@@ -1,0 +1,133 @@
+{
+  "milestone": "M6B-3",
+  "purpose": "forward-only architecture and shape prototype",
+  "model": "/root/autodl-tmp/GameDynamics_starter/data/models/Wan2.1-VACE-1.3B-diffusers",
+  "selected_main_block_indices": [
+    3,
+    11,
+    19,
+    27
+  ],
+  "model_main_blocks": 30,
+  "vace_hint_block_indices": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28
+  ],
+  "input_shapes": {
+    "target": [
+      1,
+      16,
+      5,
+      32,
+      56
+    ],
+    "o0_control": [
+      1,
+      96,
+      5,
+      32,
+      56
+    ],
+    "prompt": [
+      1,
+      512,
+      4096
+    ],
+    "action_ids": [
+      1,
+      16
+    ],
+    "action_tokens": [
+      1,
+      16,
+      256
+    ]
+  },
+  "hook_video_shapes": {
+    "3": [
+      1,
+      2240,
+      1536
+    ],
+    "11": [
+      1,
+      2240,
+      1536
+    ],
+    "19": [
+      1,
+      2240,
+      1536
+    ],
+    "27": [
+      1,
+      2240,
+      1536
+    ]
+  },
+  "attention_mask_shape": [
+    1,
+    1,
+    1792,
+    16
+  ],
+  "attention_mask_true_entries": 7168,
+  "allowed_actions_by_latent": {
+    "1": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "2": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "3": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "4": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "adapter_parameters": 3684864,
+  "per_site_parameters": 919808,
+  "all_action_token_sequences_distinct": true,
+  "zero_init_exact_equal_to_unhooked_vace": true,
+  "zero_init_exact_equal_across_all_three_actions": true,
+  "output_shape": [
+    1,
+    16,
+    5,
+    32,
+    56
+  ],
+  "scheduler_index": 14,
+  "timestep": 774,
+  "sigma": 0.7745211720466614,
+  "frozen_vace_trainable_parameters": 0,
+  "runtime_seconds": 0.7931529879570007,
+  "baseline_peak_allocated_bytes": 4568649216,
+  "all_passes_peak_allocated_bytes": 4569509376
+}

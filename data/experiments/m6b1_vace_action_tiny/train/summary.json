@@ -1,0 +1,54 @@
+{
+  "optimizer_steps": 800,
+  "smoke_gate_passed": true,
+  "adapter_trainable_parameters": 198336,
+  "pretrained_transformer_weights_unchanged": true,
+  "pretrained_vae_text_frozen": true,
+  "sample_counts": {
+    "0": 50,
+    "1": 50,
+    "2": 50,
+    "3": 50,
+    "4": 50,
+    "5": 50,
+    "6": 50,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50,
+    "11": 50,
+    "12": 50,
+    "13": 50,
+    "14": 50,
+    "15": 50
+  },
+  "runtime_seconds": 446.91,
+  "peak_gpu_allocated_mib": 4699.8,
+  "peak_gpu_vram_mib_observed": 5444,
+  "checkpoint_steps": [
+    100,
+    200,
+    400,
+    800
+  ],
+  "last_step": {
+    "step": 800,
+    "sample_index": 6,
+    "sample_id": "my_way_home_episode_0038_clip_000028",
+    "loss": 0.4071025550365448,
+    "lr": 0.001,
+    "adapter_grad_norm": 1.1521320227241776,
+    "gradient_norms": {
+      "embedding.weight": 0.04357597231864929,
+      "projection.weight": 1.1424304246902466,
+      "projection.bias": 0.14269568026065826
+    },
+    "timestep_index": 65,
+    "sigma": 0.9773755669593811,
+    "step_runtime_seconds": 0.532,
+    "elapsed_seconds": 446.897,
+    "gpu_allocated_mib": 4144.6,
+    "gpu_reserved_mib": 5120.0,
+    "gpu_peak_allocated_mib": 4699.8
+  }
+}

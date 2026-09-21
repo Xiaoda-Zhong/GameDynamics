@@ -1,0 +1,41 @@
+{
+  "state_labels": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "sample_ids": [
+    "my_way_home_episode_0028_clip_000011",
+    "my_way_home_episode_0005_clip_000053",
+    "my_way_home_episode_0010_clip_000058",
+    "my_way_home_episode_0038_clip_000028"
+  ],
+  "ssim_definition": "training.wan.current_frame_metrics.source_frame_rgb bicubic resize to 448x256, then ssim_rgb channel-averaged 11x11 Gaussian sigma 1.5, valid pixels, RGB range 0-1",
+  "matrix": [
+    [
+      1.0,
+      0.2523759603500366,
+      0.276515394449234,
+      0.185613751411438
+    ],
+    [
+      0.2523759603500366,
+      1.0,
+      0.4385797381401062,
+      0.4149209260940552
+    ],
+    [
+      0.276515394449234,
+      0.4385797381401062,
+      1.0,
+      0.3383542001247406
+    ],
+    [
+      0.185613751411438,
+      0.4149209260940552,
+      0.3383542001247406,
+      1.0
+    ]
+  ]
+}

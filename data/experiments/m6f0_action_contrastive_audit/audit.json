@@ -1,0 +1,166 @@
+{
+  "milestone": "M6F-0",
+  "status": "one-sample paired-forward gradient audit; zero optimizer steps",
+  "sample_index": 0,
+  "sample_id": "my_way_home_episode_0016_clip_000036",
+  "episode_id": "episode_0016",
+  "subset_manifest_sha256": "dcfe01939b548661013082d6866e7cfa5738c8176fd4ed6d00dfa2a90727423b",
+  "adapter_checkpoint": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6d_128clip_action_scaleup/checkpoints/step_6400/adapter.pt",
+  "adapter_checkpoint_sha256": "5c1e329f72e3f29063fa5c78a1ccd0fdca9fb8a5c83c437d94a08b508255b7c0",
+  "adapter_parameters": 3684864,
+  "correct_action_ids": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    2,
+    2,
+    2
+  ],
+  "wrong_action_ids": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    1,
+    1,
+    1
+  ],
+  "changed_action_positions": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "unchanged_counterfactual_sample_indices": [
+    38,
+    86,
+    103,
+    106
+  ],
+  "unchanged_counterfactual_sample_count": 4,
+  "shared_inputs": {
+    "real_future_latent_shape": [
+      1,
+      16,
+      5,
+      32,
+      56
+    ],
+    "native_o0_control_shape": [
+      1,
+      96,
+      5,
+      32,
+      56
+    ],
+    "text_shape": [
+      1,
+      512,
+      4096
+    ],
+    "noise_shape": [
+      1,
+      16,
+      5,
+      32,
+      56
+    ],
+    "noisy_latent_shape": [
+      1,
+      16,
+      5,
+      32,
+      56
+    ],
+    "same_tensor_objects_for_both_action_forwards": true,
+    "future_only_loss_latent_positions": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "native_vace_mask_behavior_unchanged": true,
+    "o0_control_latent_norm": 81.6458511352539,
+    "timestep_index": 588,
+    "timestep": 678,
+    "sigma": 0.6781614422798157,
+    "noise_seed": 44,
+    "prompt": "A first-person gameplay view in a retro 3D stone maze."
+  },
+  "provisional_margin": 0.05,
+  "provisional_lambda": 1.0,
+  "loss_correct": 0.13071337342262268,
+  "loss_wrong": 0.13137128949165344,
+  "loss_wrong_minus_correct": 0.0006579160690307617,
+  "ranking_loss": 0.04934208393096923,
+  "total_loss": 0.1800554573535919,
+  "ranking_hinge_active": true,
+  "adapter_gradient_norms": {
+    "correct_loss": 0.2318396815460747,
+    "wrong_loss": 0.26629049262713844,
+    "contrastive_difference": 0.244362415048151,
+    "ranking_term": 0.244362415048151,
+    "total_loss": 0.39498687811813704
+  },
+  "gradient_computation": "Separate correct/wrong backward passes with unchanged weights; total gradient is the exact algebraic combination gc + lambda*(gc-gw) while the hinge is active",
+  "adapter_gradient_all_finite": true,
+  "adapter_total_gradient_nonzero": true,
+  "action_hook_calls": {
+    "correct_value": {
+      "3": 1,
+      "11": 1,
+      "19": 1,
+      "27": 1
+    },
+    "wrong_value": {
+      "3": 1,
+      "11": 1,
+      "19": 1,
+      "27": 1
+    },
+    "correct_gradient": {
+      "3": 2,
+      "11": 2,
+      "19": 2,
+      "27": 2
+    },
+    "wrong_gradient": {
+      "3": 2,
+      "11": 2,
+      "19": 2,
+      "27": 2
+    }
+  },
+  "pretrained_vace_frozen_and_unchanged": true,
+  "vae_and_text_encoder_not_loaded_or_trained": true,
+  "adapter_weights_unchanged": true,
+  "optimizer_steps": 0,
+  "runtime_seconds": 1.441,
+  "peak_gpu_allocated_mib": 4593.2,
+  "peak_gpu_reserved_mib": 5012.0
+}

@@ -1,0 +1,49 @@
+{
+  "milestone": "M6F-2",
+  "training": true,
+  "subset_manifest": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6d_128clip_action_scaleup/subset_manifest.json",
+  "subset_manifest_sha256": "dcfe01939b548661013082d6866e7cfa5738c8176fd4ed6d00dfa2a90727423b",
+  "initial_adapter": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6f2_action_contrastive_128_6400/train/initial_adapter.pt",
+  "initial_adapter_sha256": "06ad38440c82a16576632c7f89922c0d780449ad817392c2935fe89a0ac23cf1",
+  "initialization": "same seed-42 zero-initialized M6D/M6E adapter, never loaded trained M6E weights",
+  "architecture": "unchanged M6B-4 action-token cross-attention",
+  "model": "/root/autodl-tmp/GameDynamics_starter/data/models/Wan2.1-VACE-1.3B-diffusers",
+  "blocks": [
+    3,
+    11,
+    19,
+    27
+  ],
+  "adapter_trainable_parameters": 3684864,
+  "pretrained_vace_vae_text_frozen": true,
+  "native_o0_and_mask_behavior_unchanged": true,
+  "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+  "optimizer": "AdamW",
+  "learning_rate": 0.0002,
+  "batch_size": 1,
+  "gradient_accumulation": 1,
+  "seed": 42,
+  "backbone_dtype": "bfloat16",
+  "optimizer_steps": 6400,
+  "future_loss_latent_positions": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "counterfactual": "swap TURN_LEFT/RIGHT and MOVE_FORWARD_LEFT/RIGHT; keep MOVE_FORWARD/NOOP",
+  "eligible_clips": 124,
+  "unchanged_clips": 4,
+  "margin": 0.01,
+  "lambda": 0.25,
+  "objective": "Lcorrect + lambda * max(0, margin + Lcorrect - Lwrong), or Lcorrect if no swap",
+  "sample_order_and_timestep_indices": "exact M6D/M6E seed-42/43 streams verified against all 6400 baseline log rows",
+  "diffusion_noise": "seed-44 CUDA generator, BF16 noise as in M6D/M6E",
+  "fixed_checkpoint_steps": [
+    1600,
+    3200,
+    4800,
+    6400
+  ],
+  "predetermined_official_checkpoint_step": 6400
+}

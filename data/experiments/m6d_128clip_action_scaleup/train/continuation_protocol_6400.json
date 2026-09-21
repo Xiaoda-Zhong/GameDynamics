@@ -1,0 +1,40 @@
+{
+  "ready_for_exact_resume": true,
+  "resume_from_step": 2000,
+  "target_step": 6400,
+  "additional_optimizer_steps": 4400,
+  "future_checkpoint_steps": [
+    3200,
+    4800,
+    6400
+  ],
+  "adapter_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6d_128clip_action_scaleup/checkpoints/step_2000/adapter.pt",
+  "adapter_sha256": "1801c56415b620db893ba968e48ce02f38171d78f2473c81b54fcb577866b74f",
+  "adapter_parameters": 3684864,
+  "optimizer_state_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6d_128clip_action_scaleup/checkpoints/step_2000/training_state.pt",
+  "optimizer_state_sha256": "a47dd9901ae0c60f4d0b8d1f5157dfe33211530ef325c3f313cfb8238ee1b316",
+  "optimizer_parameter_states": 34,
+  "optimizer_state_step": 2000,
+  "learning_rate": 0.0002,
+  "optimizer": "AdamW",
+  "scheduler": "fixed 1000-timestep UniPC flow schedule; no mutable per-step scheduler state",
+  "logged_scheduler_sigmas_match": true,
+  "cpu_cuda_and_noise_rng_state_available": true,
+  "sample_order_reconstructable_from_seed_and_verified_against_all_logged_steps": true,
+  "timestep_order_reconstructable_from_seed_and_verified_against_all_logged_steps": true,
+  "next_sample_index": 27,
+  "next_timestep_index": 422,
+  "subset_manifest_sha256": "dcfe01939b548661013082d6866e7cfa5738c8176fd4ed6d00dfa2a90727423b",
+  "cache_index_sha256": "ebce81e56293b718ffac4f764221e7d6637db93911c8d121f5cc074c97e3e5a5",
+  "no_optimizer_step_executed": false,
+  "batch_size": 1,
+  "gradient_accumulation": 1,
+  "backbone_dtype": "bfloat16",
+  "future_loss_latent_positions": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "pretrained_weights_frozen": true
+}

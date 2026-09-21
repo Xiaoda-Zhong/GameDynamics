@@ -1,0 +1,19 @@
+# Pretrained Wan2.1-1.3B smoke inference. Weights must already be local/cached.
+model_path_or_id: Wan-AI/Wan2.1-T2V-1.3B-Diffusers
+prompt: The player moves forward for 15 steps.
+seed: 42
+output_path: outputs/wan/baseline_smoke.mp4
+
+# Wan generates temporal lengths of 4*k+1, so the nearest baseline to the
+# 16-frame training clips is 17 generated frames.
+num_frames: 17
+width: 448
+height: 256
+fps: 8
+inference_steps: 10
+precision: bf16
+
+negative_prompt: ""
+guidance_scale: 5.0
+flow_shift: 3.0
+enable_model_cpu_offload: true

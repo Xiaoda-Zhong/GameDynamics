@@ -1,0 +1,87 @@
+{
+  "milestone": "M6E-0",
+  "status": "preparation complete; no training or evaluation run",
+  "source_log": "data/experiments/m6d_128clip_action_scaleup/train/steps.jsonl",
+  "windows": [
+    {
+      "steps": "1-500",
+      "mean_loss": 0.16248485234752297,
+      "median_loss": 0.1317916363477707,
+      "final_loss": 0.06426725536584854,
+      "mean_grad_norm": 0.561683080852552
+    },
+    {
+      "steps": "501-1000",
+      "mean_loss": 0.15277351369708778,
+      "median_loss": 0.12266676500439644,
+      "final_loss": 0.34681904315948486,
+      "mean_grad_norm": 0.36493617767473896
+    },
+    {
+      "steps": "1001-1500",
+      "mean_loss": 0.1434997532889247,
+      "median_loss": 0.11455217003822327,
+      "final_loss": 0.11670578271150589,
+      "mean_grad_norm": 0.330758208712202
+    },
+    {
+      "steps": "1501-2000",
+      "mean_loss": 0.1418760513626039,
+      "median_loss": 0.11136595159769058,
+      "final_loss": 0.1837424784898758,
+      "mean_grad_norm": 0.33006023508872073
+    }
+  ],
+  "late_loss_trend": {
+    "steps_1501_1750_mean_loss": 0.1342606374397874,
+    "steps_1751_2000_mean_loss": 0.14949146528542043,
+    "last_500_linear_loss_slope_per_step": 5.010610309393156e-05,
+    "conclusion": "No sustained downward trend near step 2000; the late half of the final 500-step window is higher, and its fitted slope is positive."
+  },
+  "exact_resume_audit": {
+    "ready_for_exact_resume": true,
+    "resume_from_step": 2000,
+    "target_step": 6400,
+    "additional_optimizer_steps": 4400,
+    "future_checkpoint_steps": [
+      3200,
+      4800,
+      6400
+    ],
+    "adapter_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6d_128clip_action_scaleup/checkpoints/step_2000/adapter.pt",
+    "adapter_sha256": "1801c56415b620db893ba968e48ce02f38171d78f2473c81b54fcb577866b74f",
+    "adapter_parameters": 3684864,
+    "optimizer_state_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6d_128clip_action_scaleup/checkpoints/step_2000/training_state.pt",
+    "optimizer_state_sha256": "a47dd9901ae0c60f4d0b8d1f5157dfe33211530ef325c3f313cfb8238ee1b316",
+    "optimizer_parameter_states": 34,
+    "optimizer_state_step": 2000,
+    "learning_rate": 0.0002,
+    "optimizer": "AdamW",
+    "scheduler": "fixed 1000-timestep UniPC flow schedule; no mutable per-step scheduler state",
+    "logged_scheduler_sigmas_match": true,
+    "cpu_cuda_and_noise_rng_state_available": true,
+    "sample_order_reconstructable_from_seed_and_verified_against_all_logged_steps": true,
+    "timestep_order_reconstructable_from_seed_and_verified_against_all_logged_steps": true,
+    "next_sample_index": 27,
+    "next_timestep_index": 422,
+    "subset_manifest_sha256": "dcfe01939b548661013082d6866e7cfa5738c8176fd4ed6d00dfa2a90727423b",
+    "cache_index_sha256": "ebce81e56293b718ffac4f764221e7d6637db93911c8d121f5cc074c97e3e5a5",
+    "no_optimizer_step_executed": true
+  },
+  "future_plan": {
+    "subset": "same 128-clip M6D subset",
+    "architecture": "unchanged M6B-4 action-token cross-attention at blocks 3, 11, 19, 27",
+    "optimizer": "AdamW",
+    "learning_rate": 0.0002,
+    "batch_size": 1,
+    "gradient_accumulation": 1,
+    "pretrained_vace_vae_text_frozen": true,
+    "target_optimizer_step": 6400,
+    "future_checkpoints": [
+      3200,
+      4800,
+      6400
+    ],
+    "command": "python -m training.wan.m6e_resume_128 --execute"
+  }
+}

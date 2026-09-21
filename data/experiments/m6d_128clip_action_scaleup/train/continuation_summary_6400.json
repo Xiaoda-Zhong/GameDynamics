@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "resumed_from_step": 2000,
+  "optimizer_steps": 6400,
+  "new_steps": 4400,
+  "checkpoint_steps": [
+    3200,
+    4800,
+    6400
+  ],
+  "pretrained_vace_unchanged": true,
+  "runtime_seconds": 1673.833,
+  "peak_gpu_allocated_mib": 4624.4,
+  "peak_gpu_reserved_mib": 5018.0,
+  "log_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6d_128clip_action_scaleup/train/continuation_2001_6400.jsonl"
+}

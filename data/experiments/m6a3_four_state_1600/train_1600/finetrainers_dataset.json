@@ -1,0 +1,16 @@
+{
+  "datasets": [
+    {
+      "data_root": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/derived_dataset",
+      "dataset_type": "video",
+      "video_resolution_buckets": [
+        [
+          17,
+          256,
+          448
+        ]
+      ],
+      "reshape_mode": "bicubic"
+    }
+  ]
+}

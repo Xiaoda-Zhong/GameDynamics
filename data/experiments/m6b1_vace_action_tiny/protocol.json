@@ -1,0 +1,85 @@
+{
+  "milestone": "M6B-1 explicit action adapter tiny pilot",
+  "model": "Wan-AI/Wan2.1-VACE-1.3B-diffusers",
+  "model_revision": "ec4d2cb062b548996b179d493fdd05340de702a1",
+  "diffusers_version": "0.40.0",
+  "manifest": "/root/autodl-tmp/GameDynamics_starter/data/wan_training/my_way_home/overfit_0016/manifest.jsonl",
+  "manifest_sha256": "7d56952b72cc7c1075319ee1aa038c04b6b250913826f111f3bf63c9c8def991",
+  "num_samples": 16,
+  "num_transitions": 256,
+  "action_vocabulary_id_to_string": [
+    "MOVE_FORWARD",
+    "TURN_LEFT",
+    "TURN_RIGHT",
+    "NOOP",
+    "MOVE_FORWARD_LEFT",
+    "MOVE_FORWARD_RIGHT"
+  ],
+  "transition_counts_by_id": {
+    "0": 46,
+    "1": 43,
+    "2": 22,
+    "3": 62,
+    "4": 32,
+    "5": 51
+  },
+  "generic_prompt": "A first-person gameplay view in a retro 3D stone maze.",
+  "frames": 17,
+  "width": 448,
+  "height": 256,
+  "fps": 8,
+  "native_vace_o0_conditioning": "Exact M6A-4 preparation: real O0 resized in memory, black mask frame0, white masks frames1..16, gray future placeholders. Preserve installed latent-mask behavior unchanged.",
+  "adapter": "Embedding(6,32), ordered four-action groups, shared zero-initialized Linear(128,1536), fixed zero k0, add only to frozen noisy patch_embedding output before flatten; 198336 trainable parameters",
+  "target": "Real O0..O16 VAE latents; loss on latent temporal positions 1..4 only",
+  "training": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "batch_size": 1,
+    "gradient_accumulation": 1,
+    "backbone_dtype": "bfloat16",
+    "vae_dtype": "float32",
+    "seed": 42,
+    "optimizer_steps": 800,
+    "smoke_gate_steps": 32,
+    "adapter_only_checkpoint_steps": [
+      100,
+      200,
+      400,
+      800
+    ],
+    "gradient_checkpointing": true,
+    "sampling": "50 deterministic shuffled epochs over 16 clips; each clip seen 50 times"
+  },
+  "inference": {
+    "condition_sample": "my_way_home_episode_0028_clip_000011",
+    "conditions": [
+      "original",
+      "reversed",
+      "all_noop"
+    ],
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "inference_steps": 30,
+    "scheduler": "UniPCMultistepScheduler",
+    "flow_shift": 3.0,
+    "guidance_scale": 5.0,
+    "conditioning_scale": 1.0,
+    "frame_count": 17,
+    "prompt": "A first-person gameplay view in a retro 3D stone maze."
+  },
+  "primary_evaluation": {
+    "flow": "M5C-5 Farneback implementation and source sign convention",
+    "transitions": "O1->O2 through O15->O16 only; align A1..A15",
+    "turn_direction_accuracy_min": 0.7,
+    "median_within_video_r_noop_max": 0.5,
+    "median_abs_action_motion_r_min": 0.5,
+    "counterfactual_flip_success_min_of_5": 4,
+    "decision": "A iff all four pass; B iff at least two pass; C otherwise"
+  },
+  "m6a4_classification_preserved": "C. VACE CONDITIONING FAILS"
+}

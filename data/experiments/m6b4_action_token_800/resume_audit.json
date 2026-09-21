@@ -1,0 +1,17 @@
+{
+  "decision": "exact_resume_from_step_32",
+  "step32_checkpoint": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6b4_action_token_smoke/step_0032.pt",
+  "step32_checkpoint_sha256": "dc2bd4eb5591481e4f0eee26f5e070b8a256ebebe3a2f94ebd451162834a9d05",
+  "adapter_weights_loaded": true,
+  "optimizer_state_loaded": true,
+  "scheduler": "fixed 1000-timestep UniPC flow schedule; no per-step scheduler state",
+  "scheduler_reconstructed": true,
+  "cpu_cuda_and_noise_rng_restored": true,
+  "first_32_sample_indices_match_log": true,
+  "saved_order_generator_state_matches": true,
+  "first_32_timestep_indices_match_log": true,
+  "same_manifest_sha256": "7d56952b72cc7c1075319ee1aa038c04b6b250913826f111f3bf63c9c8def991",
+  "same_16_sample_cache": true,
+  "steps_remaining": 768,
+  "expected_total_steps": 800
+}

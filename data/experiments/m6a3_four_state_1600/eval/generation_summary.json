@@ -1,0 +1,482 @@
+{
+  "protocol": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/protocol.json",
+  "checkpoints_loaded": {
+    "200": {
+      "checkpoint": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/lora_weights/000200",
+      "adapter_name": "step_200",
+      "control_injection_b_norm": 0.2871415615081787,
+      "lora_layer_count": 241
+    },
+    "400": {
+      "checkpoint": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/lora_weights/000400",
+      "adapter_name": "step_400",
+      "control_injection_b_norm": 0.49838706851005554,
+      "lora_layer_count": 241
+    },
+    "800": {
+      "checkpoint": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/lora_weights/000800",
+      "adapter_name": "step_800",
+      "control_injection_b_norm": 0.8375619053840637,
+      "lora_layer_count": 241
+    },
+    "1600": {
+      "checkpoint": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/lora_weights/001600",
+      "adapter_name": "step_1600",
+      "control_injection_b_norm": 1.4572811126708984,
+      "lora_layer_count": 241
+    }
+  },
+  "videos": [
+    {
+      "checkpoint_step": null,
+      "state_label": "A",
+      "sample_id": "my_way_home_episode_0028_clip_000011",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000088.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 114.40884399414062,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": true,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/untrained_state_A_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": null,
+      "state_label": "B",
+      "sample_id": "my_way_home_episode_0005_clip_000053",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0005/rgb/000424.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 74.21382904052734,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": true,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/untrained_state_B_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": null,
+      "state_label": "C",
+      "sample_id": "my_way_home_episode_0010_clip_000058",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0010/rgb/000464.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 73.97795867919922,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": true,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/untrained_state_C_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": null,
+      "state_label": "D",
+      "sample_id": "my_way_home_episode_0038_clip_000028",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0038/rgb/000224.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 75.34575653076172,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": true,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/untrained_state_D_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 200,
+      "state_label": "A",
+      "sample_id": "my_way_home_episode_0028_clip_000011",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000088.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 114.40884399414062,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_0200_state_A_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 200,
+      "state_label": "B",
+      "sample_id": "my_way_home_episode_0005_clip_000053",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0005/rgb/000424.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 74.21382904052734,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_0200_state_B_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 200,
+      "state_label": "C",
+      "sample_id": "my_way_home_episode_0010_clip_000058",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0010/rgb/000464.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 73.97795867919922,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_0200_state_C_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 200,
+      "state_label": "D",
+      "sample_id": "my_way_home_episode_0038_clip_000028",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0038/rgb/000224.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 75.34575653076172,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_0200_state_D_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 400,
+      "state_label": "A",
+      "sample_id": "my_way_home_episode_0028_clip_000011",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000088.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 114.40884399414062,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_0400_state_A_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 400,
+      "state_label": "B",
+      "sample_id": "my_way_home_episode_0005_clip_000053",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0005/rgb/000424.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 74.21382904052734,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_0400_state_B_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 400,
+      "state_label": "C",
+      "sample_id": "my_way_home_episode_0010_clip_000058",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0010/rgb/000464.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 73.97795867919922,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_0400_state_C_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 400,
+      "state_label": "D",
+      "sample_id": "my_way_home_episode_0038_clip_000028",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0038/rgb/000224.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 75.34575653076172,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_0400_state_D_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 800,
+      "state_label": "A",
+      "sample_id": "my_way_home_episode_0028_clip_000011",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000088.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 114.40884399414062,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_0800_state_A_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 800,
+      "state_label": "B",
+      "sample_id": "my_way_home_episode_0005_clip_000053",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0005/rgb/000424.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 74.21382904052734,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_0800_state_B_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 800,
+      "state_label": "C",
+      "sample_id": "my_way_home_episode_0010_clip_000058",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0010/rgb/000464.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 73.97795867919922,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_0800_state_C_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 800,
+      "state_label": "D",
+      "sample_id": "my_way_home_episode_0038_clip_000028",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0038/rgb/000224.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 75.34575653076172,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_0800_state_D_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 1600,
+      "state_label": "A",
+      "sample_id": "my_way_home_episode_0028_clip_000011",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000088.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 114.40884399414062,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_1600_state_A_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 1600,
+      "state_label": "B",
+      "sample_id": "my_way_home_episode_0005_clip_000053",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0005/rgb/000424.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 74.21382904052734,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_1600_state_B_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 1600,
+      "state_label": "C",
+      "sample_id": "my_way_home_episode_0010_clip_000058",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0010/rgb/000464.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 73.97795867919922,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_1600_state_C_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 1600,
+      "state_label": "D",
+      "sample_id": "my_way_home_episode_0038_clip_000028",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0038/rgb/000224.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 42,
+      "control_latent_norm": 75.34575653076172,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_1600_state_D_seed_42.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 1600,
+      "state_label": "A",
+      "sample_id": "my_way_home_episode_0028_clip_000011",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000088.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 43,
+      "control_latent_norm": 114.40884399414062,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_1600_state_A_seed_43.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 1600,
+      "state_label": "B",
+      "sample_id": "my_way_home_episode_0005_clip_000053",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0005/rgb/000424.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 43,
+      "control_latent_norm": 74.21382904052734,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_1600_state_B_seed_43.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 1600,
+      "state_label": "C",
+      "sample_id": "my_way_home_episode_0010_clip_000058",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0010/rgb/000464.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 43,
+      "control_latent_norm": 73.97795867919922,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_1600_state_C_seed_43.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 1600,
+      "state_label": "D",
+      "sample_id": "my_way_home_episode_0038_clip_000028",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0038/rgb/000224.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 43,
+      "control_latent_norm": 75.34575653076172,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_1600_state_D_seed_43.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 1600,
+      "state_label": "A",
+      "sample_id": "my_way_home_episode_0028_clip_000011",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000088.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 44,
+      "control_latent_norm": 114.40884399414062,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_1600_state_A_seed_44.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 1600,
+      "state_label": "B",
+      "sample_id": "my_way_home_episode_0005_clip_000053",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0005/rgb/000424.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 44,
+      "control_latent_norm": 74.21382904052734,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_1600_state_B_seed_44.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 1600,
+      "state_label": "C",
+      "sample_id": "my_way_home_episode_0010_clip_000058",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0010/rgb/000464.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 44,
+      "control_latent_norm": 73.97795867919922,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_1600_state_C_seed_44.mp4",
+      "frame_count_verified": 17
+    },
+    {
+      "checkpoint_step": 1600,
+      "state_label": "D",
+      "sample_id": "my_way_home_episode_0038_clip_000028",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0038/rgb/000224.png",
+      "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+      "seed": 44,
+      "control_latent_norm": 75.34575653076172,
+      "control_nonzero_temporal_indices": [
+        0
+      ],
+      "control_hook_active": true,
+      "adapter_disabled": false,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/eval/videos/step_1600_state_D_seed_44.mp4",
+      "frame_count_verified": 17
+    }
+  ],
+  "video_count": 28,
+  "runtime_seconds": 543.42,
+  "peak_gpu_vram_mib_observed": 11494
+}

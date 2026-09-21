@@ -1,0 +1,98 @@
+{
+  "experiment": "M6A-3 four-state current-state conditioning",
+  "selection_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/selected_states.json",
+  "source_manifest": "/root/autodl-tmp/GameDynamics_starter/data/wan_training/my_way_home/overfit_0016/manifest.jsonl",
+  "source_manifest_sha256": "7d56952b72cc7c1075319ee1aa038c04b6b250913826f111f3bf63c9c8def991",
+  "states": [
+    {
+      "label": "A",
+      "sample_id": "my_way_home_episode_0028_clip_000011",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000088.png",
+      "source_video": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/derived_dataset/videos/0000.mp4"
+    },
+    {
+      "label": "B",
+      "sample_id": "my_way_home_episode_0005_clip_000053",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0005/rgb/000424.png",
+      "source_video": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/derived_dataset/videos/0001.mp4"
+    },
+    {
+      "label": "C",
+      "sample_id": "my_way_home_episode_0010_clip_000058",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0010/rgb/000464.png",
+      "source_video": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/derived_dataset/videos/0002.mp4"
+    },
+    {
+      "label": "D",
+      "sample_id": "my_way_home_episode_0038_clip_000028",
+      "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0038/rgb/000224.png",
+      "source_video": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/derived_dataset/videos/0003.mp4"
+    }
+  ],
+  "source_o0_pairwise_ssim": [
+    [
+      1.0,
+      0.2523759603500366,
+      0.276515394449234,
+      0.185613751411438
+    ],
+    [
+      0.2523759603500366,
+      1.0,
+      0.4385797381401062,
+      0.4149209260940552
+    ],
+    [
+      0.276515394449234,
+      0.4385797381401062,
+      1.0,
+      0.3383542001247406
+    ],
+    [
+      0.185613751411438,
+      0.4149209260940552,
+      0.3383542001247406,
+      1.0
+    ]
+  ],
+  "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+  "checkpoints": {
+    "200": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/lora_weights/000200",
+    "400": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/lora_weights/000400",
+    "800": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/lora_weights/000800",
+    "1600": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a3_four_state_1600/train_1600/lora_weights/001600"
+  },
+  "untrained_control_definition": "Expanded patch embedding and real O0 control hook, with all Control LoRA adapters disabled; added base patch channels are zero initialized",
+  "seed_42_trajectory": [
+    null,
+    200,
+    400,
+    800,
+    1600
+  ],
+  "final_checkpoint_seeds": [
+    42,
+    43,
+    44
+  ],
+  "height": 256,
+  "width": 448,
+  "frames": 17,
+  "fps": 8,
+  "inference_steps": 30,
+  "guidance_scale": 5.0,
+  "flow_shift": 3.0,
+  "negative_prompt": null,
+  "lora_scale": 1.0,
+  "model_dtype": "bfloat16",
+  "inference_vae_dtype": "float32",
+  "source_preprocessing": "RGB PNG; /127.5-1; bicubic 256x448 align_corners=False",
+  "metric_input": "saved video frames decoded from MP4",
+  "ssim": "11x11 Gaussian sigma=1.5, valid pixels, RGB-channel mean, range=1",
+  "mae": "Mean absolute RGB error in 0-255 units",
+  "classification_thresholds": {
+    "state_identification_correct_of_12": 10,
+    "mean_own_state_ssim": 0.6,
+    "median_separation_margin": 0.05
+  }
+}

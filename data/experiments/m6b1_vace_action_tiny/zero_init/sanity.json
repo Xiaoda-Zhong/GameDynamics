@@ -1,0 +1,195 @@
+{
+  "passed": true,
+  "comparison": "pre-video-encoding RGB PIL output pixels, all 17 frames",
+  "max_absolute_pixel_difference": 0,
+  "identical_sha256": true,
+  "sha256_by_condition": {
+    "original": "19463eb6c20cbc7ba9c5fadc8b7b510230f52d4d036c6a0235e72a46532dc0b0",
+    "all_noop": "19463eb6c20cbc7ba9c5fadc8b7b510230f52d4d036c6a0235e72a46532dc0b0"
+  },
+  "conditions": {
+    "original": [
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "all_noop": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "seed": 42,
+  "protocol": {
+    "milestone": "M6B-1 explicit action adapter tiny pilot",
+    "model_id": "Wan-AI/Wan2.1-VACE-1.3B-diffusers",
+    "model_revision": "ec4d2cb062b548996b179d493fdd05340de702a1",
+    "model_local_path": "/root/autodl-tmp/GameDynamics_starter/data/models/Wan2.1-VACE-1.3B-diffusers",
+    "pipeline": "diffusers.WanVACEPipeline",
+    "diffusers_version": "0.40.0",
+    "source_sample_id": "my_way_home_episode_0028_clip_000011",
+    "source_o0": "/root/autodl-tmp/GameDynamics_starter/data/episodes/my_way_home/episode_0028/rgb/000088.png",
+    "source_o0_sha256": "49a23e82fa090c6410cb781fb875669187de9400657066bc9c7213994147b50d",
+    "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+    "negative_prompt": null,
+    "height": 256,
+    "width": 448,
+    "num_frames": 17,
+    "fps": 8,
+    "inference_steps": 30,
+    "guidance_scale": 5.0,
+    "flow_shift": 3.0,
+    "conditioning_scale": 1.0,
+    "dtype": "BF16 transformer/text; FP32 VAE; BF16 adapter during inference",
+    "memory_policy": "Diffusers model CPU offload, unchanged from M6A-4",
+    "native_vace_conditioning": "Exact real O0 bicubic-resized in memory to 448x256; RGB(128,128,128) placeholders for frames 1..16; 17 full-frame masks with black O0 and white frames 1..16. Native latent-mask compression is unchanged.",
+    "action_injection": "Integer IDs are embedded and grouped as four ordered future groups; the projected bias is added only to frozen noisy-latent patch embedding output before token flattening. Latent 0 receives an exact zero vector.",
+    "output_policy": "No generated-frame replacement; lossless RGB H.264 MP4",
+    "action_to_id": {
+      "MOVE_FORWARD": 0,
+      "TURN_LEFT": 1,
+      "TURN_RIGHT": 2,
+      "NOOP": 3,
+      "MOVE_FORWARD_LEFT": 4,
+      "MOVE_FORWARD_RIGHT": 5
+    },
+    "conditions": {
+      "original": [
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "reversed": [
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "all_noop": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ]
+  },
+  "mask_preprocessing": {
+    "preprocessed_video_shape": [
+      1,
+      3,
+      17,
+      256,
+      448
+    ],
+    "preprocessed_mask_shape": [
+      1,
+      1,
+      17,
+      256,
+      448
+    ],
+    "frame0_mask_min_max": [
+      0.0,
+      0.0
+    ],
+    "future_mask_min_max": [
+      1.0,
+      1.0
+    ],
+    "preprocessed_o0_exactly_matches_supplied_image": true
+  },
+  "per_generation": {
+    "original": {
+      "action_hook_calls": 60,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 114.42259979248047
+      },
+      "runtime_seconds": 24.523,
+      "peak_gpu_allocated_mib": 13151.6,
+      "post_generation_first_frame_replacement": false
+    },
+    "all_noop": {
+      "action_hook_calls": 60,
+      "conditioning_audit": {
+        "native_pixel_mask_verified": true,
+        "o0_conditioning_latent_norm": 114.42259979248047
+      },
+      "runtime_seconds": 21.101,
+      "peak_gpu_allocated_mib": 13151.38,
+      "post_generation_first_frame_replacement": false
+    }
+  },
+  "runtime_seconds": 51.38,
+  "peak_gpu_vram_mib_observed": 14040
+}

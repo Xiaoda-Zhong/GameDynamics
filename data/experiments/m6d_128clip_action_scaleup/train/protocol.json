@@ -1,0 +1,41 @@
+{
+  "milestone": "M6D",
+  "subset_manifest": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6d_128clip_action_scaleup/subset_manifest.json",
+  "subset_manifest_sha256": "dcfe01939b548661013082d6866e7cfa5738c8176fd4ed6d00dfa2a90727423b",
+  "initial_adapter_sha256": "06ad38440c82a16576632c7f89922c0d780449ad817392c2935fe89a0ac23cf1",
+  "initialization": "Fresh ActionTokenAdapter with torch.manual_seed(42), M6B-3 zero output projections; no M6B-4 trained weights loaded",
+  "model": "/root/autodl-tmp/GameDynamics_starter/data/models/Wan2.1-VACE-1.3B-diffusers",
+  "architecture": "unchanged M6B-3/M6B-4 action-token cross-attention",
+  "blocks": [
+    3,
+    11,
+    19,
+    27
+  ],
+  "trainable_adapter_parameters": 3684864,
+  "native_o0_and_mask_behavior_unchanged": true,
+  "prompt": "A first-person gameplay view in a retro 3D stone maze.",
+  "seed": 42,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0002,
+  "batch_size": 1,
+  "gradient_accumulation": 1,
+  "backbone_dtype": "bfloat16",
+  "optimizer_steps": 2000,
+  "future_loss_latent_positions": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "fixed_checkpoint_steps": [
+    500,
+    1000,
+    1500,
+    2000
+  ],
+  "official_checkpoint_step": 2000,
+  "sampling": "Seed-42 independent shuffled 128-sample epochs, truncated after 2000 steps",
+  "timestep_sampling": "Seed-43 randint from fixed 1000-step flow schedule",
+  "diffusion_noise": "Seed-44 CUDA generator; BF16 noise as in M6B-4"
+}

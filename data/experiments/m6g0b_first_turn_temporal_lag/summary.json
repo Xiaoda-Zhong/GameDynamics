@@ -1,0 +1,37 @@
+{
+  "milestone": "M6G-0B",
+  "classification": "A. TRUE FIRST-TURN CONTROL FAILURE",
+  "flow_convention": {
+    "left_turn_mean_raw_u": 3.753140855768942,
+    "right_turn_mean_raw_u": -3.2418581251968983,
+    "left_positive_multiplier": 1,
+    "convention": "positive raw u means left-turn camera motion; negative means right-turn"
+  },
+  "expected_reversal_rule": "ORIGINAL calibrated mean horizontal flow > 0 and REVERSED < 0 for the same transition",
+  "official_first_turn_transition": "O1->O2",
+  "official_first_turn_flip_count": 7,
+  "official_first_turn_pair_count": 12,
+  "transition_flip_counts": {
+    "O1->O2": 7,
+    "O2->O3": 4,
+    "O3->O4": 3,
+    "O4->O5": 1
+  },
+  "earliest_reversal_lag_counts": {
+    "immediate": 7,
+    "1-frame-late": 0,
+    "2-frame-late": 0,
+    "3-frame-late": 0,
+    "no reversal": 5
+  },
+  "diagnostic_o1_to_o5_window": {
+    "definition": "Arithmetic mean of the four signed transition flows O1->O2 through O4->O5, separately for ORIGINAL and REVERSED",
+    "expected_reversal_count": 5,
+    "pair_count": 12
+  },
+  "source_files": {
+    "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6f2_action_contrastive_128_6400/eval/metrics.json": "55a163d66f0032795040852796470e7e95646c2ea78f501b823787347bdcd0d7",
+    "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6f2_action_contrastive_128_6400/eval/transitions.jsonl": "8532b5cb42ee84abf251ac36f6ca819f251804630dbb04e4bac8fd8edc0d6e75"
+  },
+  "no_video_decode_or_model_forward": true
+}

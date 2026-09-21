@@ -1,0 +1,248 @@
+{
+  "classification": "C. VACE CONDITIONING FAILS",
+  "criteria": {
+    "hard_o0_anchor": {
+      "pass": false,
+      "minimum_each": 0.95
+    },
+    "early_future_state_id": {
+      "pass": true,
+      "correct_of_12": 12,
+      "accuracy": 1.0,
+      "minimum_correct": 10
+    },
+    "early_future_separation": {
+      "pass": true,
+      "median_margin": 0.16195823748906457,
+      "minimum_median_margin": 0.05
+    }
+  },
+  "frame0_ssim_mean": 0.9207937667767206,
+  "frame0_ssim_median": 0.9177113473415375,
+  "frame0_ssim_minimum": 0.7797973155975342,
+  "full_12x4_early_future_score_table": [
+    {
+      "true_state": "A",
+      "seed": 42,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/videos/state_A_seed_42.mp4",
+      "decoded_frame0_ssim_to_supplied_o0": 0.9041007161140442,
+      "early_future_scores_A_B_C_D": [
+        0.4309565524260203,
+        0.3649293879667918,
+        0.3380964795748393,
+        0.28963624437650043
+      ],
+      "predicted_state": "A",
+      "correct": true,
+      "early_future_separation_margin": 0.06602716445922852
+    },
+    {
+      "true_state": "A",
+      "seed": 43,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/videos/state_A_seed_43.mp4",
+      "decoded_frame0_ssim_to_supplied_o0": 0.7797973155975342,
+      "early_future_scores_A_B_C_D": [
+        0.4450064996878306,
+        0.3373181422551473,
+        0.2660674899816513,
+        0.27869414289792377
+      ],
+      "predicted_state": "A",
+      "correct": true,
+      "early_future_separation_margin": 0.10768835743268335
+    },
+    {
+      "true_state": "A",
+      "seed": 44,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/videos/state_A_seed_44.mp4",
+      "decoded_frame0_ssim_to_supplied_o0": 0.9114169478416443,
+      "early_future_scores_A_B_C_D": [
+        0.5802322427431742,
+        0.33561230699221295,
+        0.280935138463974,
+        0.262874315182368
+      ],
+      "predicted_state": "A",
+      "correct": true,
+      "early_future_separation_margin": 0.24461993575096125
+    },
+    {
+      "true_state": "B",
+      "seed": 42,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/videos/state_B_seed_42.mp4",
+      "decoded_frame0_ssim_to_supplied_o0": 0.9853029847145081,
+      "early_future_scores_A_B_C_D": [
+        0.2844463884830475,
+        0.9476324717203776,
+        0.41193171342213947,
+        0.42406513293584186
+      ],
+      "predicted_state": "B",
+      "correct": true,
+      "early_future_separation_margin": 0.5235673387845357
+    },
+    {
+      "true_state": "B",
+      "seed": 43,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/videos/state_B_seed_43.mp4",
+      "decoded_frame0_ssim_to_supplied_o0": 0.9885642528533936,
+      "early_future_scores_A_B_C_D": [
+        0.26940231521924335,
+        0.6182437936464945,
+        0.37499545017878216,
+        0.39378707607587177
+      ],
+      "predicted_state": "B",
+      "correct": true,
+      "early_future_separation_margin": 0.22445671757062274
+    },
+    {
+      "true_state": "B",
+      "seed": 44,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/videos/state_B_seed_44.mp4",
+      "decoded_frame0_ssim_to_supplied_o0": 0.9839838743209839,
+      "early_future_scores_A_B_C_D": [
+        0.2855582336584727,
+        0.9707919756571451,
+        0.4032362898190816,
+        0.43001119295756024
+      ],
+      "predicted_state": "B",
+      "correct": true,
+      "early_future_separation_margin": 0.540780782699585
+    },
+    {
+      "true_state": "C",
+      "seed": 42,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/videos/state_C_seed_42.mp4",
+      "decoded_frame0_ssim_to_supplied_o0": 0.9622649550437927,
+      "early_future_scores_A_B_C_D": [
+        0.25804434219996136,
+        0.4054033358891805,
+        0.7189626296361288,
+        0.3306749959786733
+      ],
+      "predicted_state": "C",
+      "correct": true,
+      "early_future_separation_margin": 0.3135592937469483
+    },
+    {
+      "true_state": "C",
+      "seed": 43,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/videos/state_C_seed_43.mp4",
+      "decoded_frame0_ssim_to_supplied_o0": 0.927017092704773,
+      "early_future_scores_A_B_C_D": [
+        0.24625312785307565,
+        0.41267284750938416,
+        0.62890096505483,
+        0.334803968667984
+      ],
+      "predicted_state": "C",
+      "correct": true,
+      "early_future_separation_margin": 0.2162281175454458
+    },
+    {
+      "true_state": "C",
+      "seed": 44,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/videos/state_C_seed_44.mp4",
+      "decoded_frame0_ssim_to_supplied_o0": 0.9240057468414307,
+      "early_future_scores_A_B_C_D": [
+        0.24394778410593668,
+        0.40527422229448956,
+        0.4524580240249634,
+        0.3250668446222941
+      ],
+      "predicted_state": "C",
+      "correct": true,
+      "early_future_separation_margin": 0.04718380173047382
+    },
+    {
+      "true_state": "D",
+      "seed": 42,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/videos/state_D_seed_42.mp4",
+      "decoded_frame0_ssim_to_supplied_o0": 0.8944385647773743,
+      "early_future_scores_A_B_C_D": [
+        0.21741087237993875,
+        0.4286189377307892,
+        0.349647323290507,
+        0.4794718225797017
+      ],
+      "predicted_state": "D",
+      "correct": true,
+      "early_future_separation_margin": 0.05085288484891254
+    },
+    {
+      "true_state": "D",
+      "seed": 43,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/videos/state_D_seed_43.mp4",
+      "decoded_frame0_ssim_to_supplied_o0": 0.8962907791137695,
+      "early_future_scores_A_B_C_D": [
+        0.216666450103124,
+        0.41999812920888263,
+        0.3353799184163411,
+        0.46580247084299725
+      ],
+      "predicted_state": "D",
+      "correct": true,
+      "early_future_separation_margin": 0.04580434163411462
+    },
+    {
+      "true_state": "D",
+      "seed": 44,
+      "video_path": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/videos/state_D_seed_44.mp4",
+      "decoded_frame0_ssim_to_supplied_o0": 0.8923419713973999,
+      "early_future_scores_A_B_C_D": [
+        0.22565101087093353,
+        0.43645723660786945,
+        0.3251269956429799,
+        0.4787062406539917
+      ],
+      "predicted_state": "D",
+      "correct": true,
+      "early_future_separation_margin": 0.04224900404612225
+    }
+  ],
+  "per_state": {
+    "A": {
+      "correct_of_3": 3,
+      "mean_frame0_ssim": 0.8651049931844076,
+      "min_frame0_ssim": 0.7797973155975342,
+      "mean_own_future_score": 0.48539843161900836,
+      "median_future_margin": 0.10768835743268335
+    },
+    "B": {
+      "correct_of_3": 3,
+      "mean_frame0_ssim": 0.9859503706296285,
+      "min_frame0_ssim": 0.9839838743209839,
+      "mean_own_future_score": 0.8455560803413391,
+      "median_future_margin": 0.5235673387845357
+    },
+    "C": {
+      "correct_of_3": 3,
+      "mean_frame0_ssim": 0.9377625981966654,
+      "min_frame0_ssim": 0.9240057468414307,
+      "mean_own_future_score": 0.6001072062386407,
+      "median_future_margin": 0.2162281175454458
+    },
+    "D": {
+      "correct_of_3": 3,
+      "mean_frame0_ssim": 0.8943571050961813,
+      "min_frame0_ssim": 0.8923419713973999,
+      "mean_own_future_score": 0.47466017802556354,
+      "median_future_margin": 0.04580434163411462
+    }
+  },
+  "engineering_validity": {
+    "all_12_videos_decode_to_17_frames": true,
+    "all_first_frame_masks_verified": true,
+    "all_o0_conditioning_latents_active": true,
+    "same_prompt_and_settings": true,
+    "no_post_generation_frame_replacement": true,
+    "model_is_native_vace_without_control_lora": true
+  },
+  "runtime_seconds": 259.09,
+  "peak_gpu_vram_mib_observed": 14038,
+  "contact_sheet": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/contact_sheet.png",
+  "protocol": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/protocol.json",
+  "generation_summary": "/root/autodl-tmp/GameDynamics_starter/data/experiments/m6a4_vace_hard_o0/eval/generation_summary.json"
+}
