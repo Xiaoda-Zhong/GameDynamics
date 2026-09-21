@@ -8,7 +8,7 @@ $$
 O_0 + A_{0:15} \rightarrow \hat{O}_{1:16}
 $$
 
-Here, (O_0) is the observed current frame, (A_{0:15}) is the 16-step action sequence, and (\hat{O}_{1:16}) is the predicted future video.
+Here, `O0` is the observed current frame, `A0:15` is the 16-step action sequence, and `O1:16` is the predicted future video.
 
 The final showcase model pairs a frozen **Wan2.1-VACE-1.3B** video backbone with a 3.68M-parameter action-token cross-attention adapter. The project covers trajectory collection, leakage-safe dataset construction, parameter-efficient training, and held-out counterfactual evaluation.
 
